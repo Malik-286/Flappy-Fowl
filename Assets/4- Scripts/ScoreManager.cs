@@ -7,11 +7,14 @@ public  class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-   
-      void Awake()
+    public int totalScore;
+    public int gamePlayScore;
+
+    void Awake()
     {
- 
+
         RunSingelton();
+        LoadCurrencyData();
     }
 
     void RunSingelton()
@@ -33,8 +36,7 @@ public  class ScoreManager : MonoBehaviour
         ResetGamePlayScore();
      }
 
-    public int currentScore;
-    public int gamePlayScore;
+   
      
  
     public int GetGamePlayScore()
@@ -46,24 +48,37 @@ public  class ScoreManager : MonoBehaviour
     public void IncreaseGamePlayScore()
     {
         gamePlayScore++;
+        SaveCurrencyData();
     }
 
-    public int GetCurrentScore()
+    public int GetTotalScore()
     {
-         return currentScore;
+         return totalScore;
     }
 
 
     public void IncreaseCurrentScore()
     {
-         currentScore += gamePlayScore;
+        totalScore += gamePlayScore;
+        SaveCurrencyData();
      }
 
     public void ResetGamePlayScore()
     {
         gamePlayScore = 0;
+        SaveCurrencyData();
     }
 
+    public void SaveCurrencyData()
+    {
+        SaveSystem.SaveDate(this);
+    }
+
+    public void LoadCurrencyData()
+    {
+        Data data =  SaveSystem.LoadData();
+        this.totalScore = data.totalScore;
+    }
 
     
 }

@@ -7,8 +7,8 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-     
-    AudioSource audioSource;
+    [HideInInspector]
+    public AudioSource audioSource;
 
     [SerializeField] Image imageComponent;
     [SerializeField] Sprite activeMusicImage;

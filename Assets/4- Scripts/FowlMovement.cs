@@ -89,7 +89,7 @@ public class FowlMovement : MonoBehaviour
                Debug.Log("Collided Detected...!");
             if (AudioManager.instance != null)
             {
-                scoreManager.currentScore += scoreManager.GetGamePlayScore();
+                scoreManager.totalScore += scoreManager.GetGamePlayScore();
                 AudioManager.instance.PlaySingleShotAudio(collisionSFX, 1.8f);
             }
                Invoke("FowlDeath", 0.30f);

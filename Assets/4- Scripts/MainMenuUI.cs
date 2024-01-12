@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+ 
 public class MainMenuUI : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
-
+ 
     [SerializeField] AudioClip touchSFX;
 
 
@@ -36,7 +36,7 @@ public class MainMenuUI : MonoBehaviour
 
     void Update()
     {
-        currentScoreText.text = scoreManager.GetCurrentScore().ToString();
+        currentScoreText.text = scoreManager.GetTotalScore().ToString();
     }
     
     public void StartGame()

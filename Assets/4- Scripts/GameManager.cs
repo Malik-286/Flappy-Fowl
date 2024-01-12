@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
+             
         if(string.IsNullOrEmpty(currentSavedScene))
         {
             SceneManager.LoadScene(2);
@@ -38,6 +39,6 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(currentSavedScene);
         }
-        
+       
     }
 }
