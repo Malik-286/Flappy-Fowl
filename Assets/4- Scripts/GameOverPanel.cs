@@ -46,4 +46,11 @@ public class GameOverPanel : MonoBehaviour
             GameManager.instance.RestartGame(); 
          
     }
+
+    public void LoadNextNevel()
+    {
+        int CurrentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextLevelIndex = CurrentLevelIndex + 1;
+        SceneManager.LoadScene(nextLevelIndex);
+    }
 }
