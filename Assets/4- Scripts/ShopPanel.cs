@@ -12,8 +12,8 @@ public class ShopPanel : MonoBehaviour
 
     void Start()
     {
-         
-        LockAllSkins();
+
+        UnlockAllSkins();
         EnableSelectedTag();
          
     }
