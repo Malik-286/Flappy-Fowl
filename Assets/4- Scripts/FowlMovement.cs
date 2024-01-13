@@ -22,11 +22,13 @@ public class FowlMovement : MonoBehaviour
     Rigidbody2D rb_fowl;
     Vector2 UpForce = new Vector2(0f, 5f);
     ScoreManager scoreManager;
+    GamePlayUI gamePlayUI;
  
     void Start()
     {
         rb_fowl = GetComponent<Rigidbody2D>();
         scoreManager = FindObjectOfType<ScoreManager>();
+        gamePlayUI = FindObjectOfType<GamePlayUI>();
      }
 
     
@@ -86,30 +88,19 @@ public class FowlMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground") == true)
         {
-               Debug.Log("Collided Detected...!");
+            scoreManager.totalScore += scoreManager.GetGamePlayScore();
             if (AudioManager.instance != null)
-            {
-                scoreManager.totalScore += scoreManager.GetGamePlayScore();
+            {               
                 AudioManager.instance.PlaySingleShotAudio(collisionSFX, 1.8f);
             }
-               Invoke("FowlDeath", 0.30f);
+               gamePlayUI.ActivateGameOverPanel();
+               this.gameObject.SetActive(false);
  
         }
 
     }
 
-
-
-    void FowlDeath()
-    {
-        scoreManager.ResetGamePlayScore();
-        SceneManager.LoadScene("Main Menu");
-       
-    }
-
   
-
-    
 
 
 }

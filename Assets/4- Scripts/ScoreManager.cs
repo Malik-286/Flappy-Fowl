@@ -66,8 +66,12 @@ public  class ScoreManager : MonoBehaviour
     public void ResetGamePlayScore()
     {
         gamePlayScore = 0;
-        SaveCurrencyData();
     }
+    public void ResetTotalScore()
+    {
+        totalScore = 0;
+        SaveCurrencyData() ;
+     }
 
     public void SaveCurrencyData()
     {

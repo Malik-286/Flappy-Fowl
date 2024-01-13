@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -40,5 +41,11 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(currentSavedScene);
         }
        
+    }
+
+    public void RestartGame()
+    {
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(sceneIndex);
     }
 }
