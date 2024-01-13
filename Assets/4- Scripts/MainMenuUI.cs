@@ -53,6 +53,8 @@ public class MainMenuUI : MonoBehaviour
             if (scoreManager != null)
             {
                 scoreManager.ResetTotalScore();
+                PlayerPrefs.DeleteAll();
+                PlayerPrefs.Save();
             }
 
         }

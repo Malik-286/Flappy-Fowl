@@ -20,8 +20,7 @@ public class GamePlayUI : MonoBehaviour
     {
         gameOverPanel.SetActive(false);
         scoreManager = FindObjectOfType<ScoreManager>();    
-        int selectedPrefeb = PlayerPrefs.GetInt("SC");
-        Debug.Log(selectedPrefeb);
+        int selectedPrefeb = PlayerPrefs.GetInt("SelectedSkin");
         player = Instantiate(Prefebs[selectedPrefeb], SpawnPoint.transform.position, Quaternion.identity);
 
     }
