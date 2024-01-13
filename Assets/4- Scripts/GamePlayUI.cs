@@ -9,6 +9,8 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] GameObject[] Prefebs;
     [SerializeField] GameObject SpawnPoint;
     [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject gameWinPanel;
+
     [SerializeField] TextMeshProUGUI gamePlayScoreText;
  
 
@@ -19,6 +21,7 @@ public class GamePlayUI : MonoBehaviour
     void Start()
     {
         gameOverPanel.SetActive(false);
+        gameWinPanel.SetActive(false);
         scoreManager = FindObjectOfType<ScoreManager>();    
         int selectedPrefeb = PlayerPrefs.GetInt("SelectedSkin");
         player = Instantiate(Prefebs[selectedPrefeb], SpawnPoint.transform.position, Quaternion.identity);
@@ -44,5 +47,8 @@ public class GamePlayUI : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
     }
-
+    public void ActivateGameWinPanel()
+    {
+        gameWinPanel.SetActive(true);
+    }
 }
