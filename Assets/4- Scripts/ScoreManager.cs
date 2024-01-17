@@ -3,33 +3,19 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public  class ScoreManager : MonoBehaviour
+public  class ScoreManager : Singelton<ScoreManager>
 {
-    public static ScoreManager instance;
-
+ 
     public int totalScore;
     public int gamePlayScore;
 
-    void Awake()
+    protected override void Awake()
     {
-
-        RunSingelton();
-        LoadCurrencyData();
+         base.Awake();
+         LoadCurrencyData();
     }
 
-    void RunSingelton()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-
-    }
+   
 
       void Start()
      {

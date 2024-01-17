@@ -20,19 +20,19 @@ public class GameOverPanel : MonoBehaviour
 
     void UpdateGameOverPanelScoreText()
     {
-        if(ScoreManager.instance != null)
+        if(ScoreManager.GetInstance() != null)
         {
-            gamePlayScoreText.text = ScoreManager.instance.GetGamePlayScore().ToString();
-            totalScoreText.text = ScoreManager.instance.GetTotalScore().ToString();
+            gamePlayScoreText.text = ScoreManager.GetInstance().GetGamePlayScore().ToString();
+            totalScoreText.text = ScoreManager.GetInstance().GetTotalScore().ToString();
 
         }
     }
 
     public void GoToMainMenu()
     {
-        if (ScoreManager.instance != null)
+        if (ScoreManager.GetInstance() != null)
         {
-            ScoreManager.instance.ResetGamePlayScore();
+            ScoreManager.GetInstance().ResetGamePlayScore();
         }
             
            SceneManager.LoadScene("Main Menu");
@@ -42,8 +42,8 @@ public class GameOverPanel : MonoBehaviour
     public void PlayAgain()
     {
         
-            ScoreManager.instance.ResetGamePlayScore();        
-            GameManager.instance.RestartGame(); 
+            ScoreManager.GetInstance().ResetGamePlayScore();        
+            GameManager.GetInstance().RestartGame(); 
          
     }
 

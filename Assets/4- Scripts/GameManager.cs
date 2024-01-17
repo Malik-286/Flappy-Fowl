@@ -4,26 +4,17 @@ using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singelton<GameManager>
 {
 
-    public static GameManager instance;
+     
 
     [SerializeField] string currentSavedScene;
 
-    void Awake()
+     protected override void Awake()
     {
-
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
+        base.Awake();   
+       
     }
     public string GetCurrentSavedScene()
     {

@@ -30,7 +30,7 @@ public class ExitCage : MonoBehaviour
             dustyWings.SetActive(true);
             cagedBirdSprite.sprite = collision.gameObject.GetComponent<SpriteRenderer>().sprite;
             collision.gameObject.SetActive(false);
-            AudioManager.instance.PlaySingleShotAudio(winSoundEffect, 1.5f);
+            AudioManager.GetInstance().PlaySingleShotAudio(winSoundEffect, 1.5f);
             Invoke("EnableWinPanel", 1.5f);
 
 

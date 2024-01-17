@@ -45,9 +45,9 @@ public class FowlMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(AudioManager.instance != null)
+            if(AudioManager.GetInstance() != null)
             {
-                AudioManager.instance.PlaySingleShotAudio(touchSFX, 2f);
+                AudioManager.GetInstance().PlaySingleShotAudio(touchSFX, 2f);
             }         
               MoveUp();
         }
@@ -70,14 +70,14 @@ public class FowlMovement : MonoBehaviour
         {
             Debug.Log("Passed");
   
-            if (AudioManager.instance != null)
+            if (AudioManager.GetInstance() != null)
             {
                 if (scoreManager != null)
                 {
                     scoreManager.IncreaseGamePlayScore();
                 }
                       
-                 AudioManager.instance.PlaySingleShotAudio(passSFX, 2.0f);
+                 AudioManager.GetInstance().PlaySingleShotAudio(passSFX, 2.0f);
              }
         }
 
@@ -89,12 +89,14 @@ public class FowlMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground") == true)
         {
             scoreManager.totalScore += scoreManager.GetGamePlayScore();
-            if (AudioManager.instance != null)
+            if (AudioManager.GetInstance() != null)
             {               
-                AudioManager.instance.PlaySingleShotAudio(collisionSFX, 1.8f);
+                AudioManager.GetInstance().PlaySingleShotAudio(collisionSFX, 1.8f);
             }
-               gamePlayUI.ActivateGameOverPanel();
-               this.gameObject.SetActive(false);
+            ScoreManager.GetInstance().SaveCurrencyData();
+            gamePlayUI.ActivateGameOverPanel();
+            this.gameObject.SetActive(false);
+                
  
         }
 

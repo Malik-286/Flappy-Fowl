@@ -18,14 +18,12 @@ public class MainMenuUI : MonoBehaviour
 
 
     ScoreManager scoreManager;
-    AudioManager audioManager;
     GameManager gameManager;
     void Start()
     {
 
         scoreManager = FindObjectOfType<ScoreManager>();
-        audioManager = FindObjectOfType<AudioManager>(); 
-        gameManager = FindObjectOfType<GameManager>();
+         gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
         resetPanel.SetActive(false);
@@ -34,7 +32,7 @@ public class MainMenuUI : MonoBehaviour
 
     public void PlayTouchAudio()
     {
-       audioManager.PlaySingleShotAudio(touchSFX, 1.0f);
+         AudioManager.GetInstance().PlaySingleShotAudio(touchSFX, 1.0f);
     }
 
     void Update()

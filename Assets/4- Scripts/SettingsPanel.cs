@@ -28,16 +28,16 @@ public class SettingsPanel : MonoBehaviour
     }
     public void MuteAndUnMuteSound(Toggle toggle)
     {
-        if(AudioManager.instance != null)
+        if(AudioManager.GetInstance() != null)
         {
             if(toggle.isOn)
             {
-                AudioManager.instance.audioSource.mute = false;
+                AudioManager.GetInstance().audioSource.mute = false;
                 soundOnOffText.text = "ON".ToUpper();
             }
             else if(!toggle.isOn) 
             {
-                AudioManager.instance.audioSource.mute = true;
+                AudioManager.GetInstance().audioSource.mute = true;
                 soundOnOffText.text = "OFF".ToUpper();
             }
         }
@@ -45,15 +45,15 @@ public class SettingsPanel : MonoBehaviour
 
     void FixToggleTick()
     {
-        if(AudioManager.instance && audioToggle != null) 
+        if(AudioManager.GetInstance() && audioToggle != null) 
         {
-            if (AudioManager.instance.audioSource.mute == false)
+            if (AudioManager.GetInstance().audioSource.mute == false)
             {
                 soundOnOffText.text = "ON".ToUpper();
                 audioToggle.isOn = true;
                 
             }
-            else if (AudioManager.instance.audioSource.mute == true)
+            else if (AudioManager.GetInstance().audioSource.mute == true)
             {
                 soundOnOffText.text = "OFF".ToUpper();
                 audioToggle.isOn = false;

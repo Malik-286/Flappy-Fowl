@@ -3,33 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : Singelton<AudioManager>
 {
-    public static AudioManager instance;
-
-    [HideInInspector]
-    public AudioSource audioSource;
+ 
+     public AudioSource audioSource;
 
     [SerializeField] Image imageComponent;
     [SerializeField] Sprite activeMusicImage;
     [SerializeField] Sprite deActiveMusicImage;
- 
-    void Start()
-    {
-        
 
-        if (instance != null && instance != this)
-        { 
-           Destroy( this.gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            audioSource = GetComponent<AudioSource>();
-        }
-          
+
+     protected override void Awake()
+    {
+        base.Awake();
+        audioSource = GetComponent<AudioSource>();
     }
+    
 
     public void PlaySingleShotAudio(AudioClip singleShotAudio, float volume)
     {
