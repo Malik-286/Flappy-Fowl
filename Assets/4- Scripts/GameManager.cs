@@ -22,8 +22,8 @@ public class GameManager : Singelton<GameManager>
     }
     public void StartGame()
     {
-             
-        if(string.IsNullOrEmpty(currentSavedScene))
+        ScoreManager.GetInstance().ResetGamePlayScore();
+        if (string.IsNullOrEmpty(currentSavedScene))
         {
             SceneManager.LoadScene(2);
         }

@@ -49,6 +49,7 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
+        ScoreManager.GetInstance().ResetGamePlayScore();
         int CurrentLevelIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelIndex = CurrentLevelIndex + 1;
         SceneManager.LoadScene(nextLevelIndex);
