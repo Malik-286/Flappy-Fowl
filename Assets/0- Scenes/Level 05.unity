@@ -7610,6 +7610,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!1 &180786903228244079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3559591812080214472}
+  - component: {fileID: 4186896817950496885}
+  m_Layer: 0
+  m_Name: BannerAd (Admob)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!61 &335823870240010256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13108,6 +13125,21 @@ Transform:
   m_Father: {fileID: 5858109116685226580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3559591812080214472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180786903228244079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3671887337253090238
 GameObject:
   m_ObjectHideFlags: 0
@@ -13144,6 +13176,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0.34545898, y: 4.0439453}
   m_SizeDelta: {x: 58.5761, y: 32.3144}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4186896817950496885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180786903228244079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179a51989a0503543a5167e1688cf8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!81 &4194752849823401449
 AudioListener:
   m_ObjectHideFlags: 0
