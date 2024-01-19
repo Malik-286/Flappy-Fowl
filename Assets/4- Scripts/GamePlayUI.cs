@@ -10,9 +10,13 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] GameObject SpawnPoint;
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject gameWinPanel;
+    [SerializeField] int numberofFowlsToPass;
+    
+    
+     [SerializeField] TextMeshProUGUI gamePlayScoreText;
+     [SerializeField] TextMeshProUGUI fowlsToPassText;
 
-    [SerializeField] TextMeshProUGUI gamePlayScoreText;
- 
+
 
     GameObject player;
     ScoreManager scoreManager;
@@ -32,9 +36,15 @@ public class GamePlayUI : MonoBehaviour
     {
         UpdateSpawnPointPosition();
         gamePlayScoreText.text = scoreManager.GetGamePlayScore().ToString("0");
+        fowlsToPassText.text = numberofFowlsToPass.ToString("Fowls Left: "+numberofFowlsToPass);
+
+          
     }
 
-   
+   public void DecreaseNumberOfFowls()
+    {
+       numberofFowlsToPass--;
+    }
 
 
     void UpdateSpawnPointPosition()

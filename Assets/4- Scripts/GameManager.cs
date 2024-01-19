@@ -7,36 +7,47 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singelton<GameManager>
 {
 
-     
-
-    [SerializeField] string currentSavedScene;
+ 
+    public string currentLevel;
 
      protected override void Awake()
     {
-        base.Awake();   
+        base.Awake();
+        
        
     }
-    public string GetCurrentSavedScene()
+    public string GetCurrentScene()
     {
-        return currentSavedScene;
+        return currentLevel;
     }
+
+    void Update()
+    {
+        currentLevel = PlayerPrefs.GetString("CurrentLevelKey");
+    }
+
+
     public void StartGame()
     {
         ScoreManager.GetInstance().ResetGamePlayScore();
-        if (string.IsNullOrEmpty(currentSavedScene))
+        if (string.IsNullOrEmpty(currentLevel))
         {
-            SceneManager.LoadScene(2);
+             SceneManager.LoadScene(2);
         }
         else
         {
-            SceneManager.LoadScene(currentSavedScene);
+             SceneManager.LoadScene(currentLevel);
         }
        
     }
 
     public void RestartGame()
     {
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(sceneIndex);
+         
     }
+
+    
+    
 }

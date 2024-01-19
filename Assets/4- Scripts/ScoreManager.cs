@@ -9,6 +9,7 @@ public  class ScoreManager : Singelton<ScoreManager>
     public int totalScore;
     public int gamePlayScore;
 
+ 
     protected override void Awake()
     {
          base.Awake();

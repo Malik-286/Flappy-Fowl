@@ -30,12 +30,13 @@ public class GameOverPanel : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
+
         if (ScoreManager.GetInstance() != null)
         {
             ScoreManager.GetInstance().ResetGamePlayScore();
         }
-            
-           SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Main Menu");
 
     }
 
@@ -49,9 +50,21 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
+        PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         ScoreManager.GetInstance().ResetGamePlayScore();
-        int CurrentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextLevelIndex = CurrentLevelIndex + 1;
-        SceneManager.LoadScene(nextLevelIndex);
+
+        int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextLevelIndex = currentLevelIndex + 1;
+
+        if (nextLevelIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextLevelIndex);
+ 
+        }
+        else
+        {
+            // Load Random Level in the game.
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 }

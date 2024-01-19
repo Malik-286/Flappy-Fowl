@@ -6,12 +6,13 @@ using UnityEngine;
 public class Data  
 {
     public int totalScore;
-    public Data(ScoreManager scoreManager)
+ 
+    public Data(ScoreManager scoreManager )
     {
         this.totalScore = scoreManager.GetTotalScore();
-
-    }   
-
+     }  
+    
+     
 
     
 }

@@ -66,9 +66,9 @@ public class FowlMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Pass") == true)
+        if (collision.gameObject.CompareTag("Pass"))
         {
-            Debug.Log("Passed");
+            gamePlayUI.DecreaseNumberOfFowls(); 
   
             if (AudioManager.GetInstance() != null)
             {
@@ -86,7 +86,7 @@ public class FowlMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
 
     {
-        if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground") == true)
+        if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground"))
         {
             scoreManager.totalScore += scoreManager.GetGamePlayScore();
             if (AudioManager.GetInstance() != null)
