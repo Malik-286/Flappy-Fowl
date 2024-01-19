@@ -68,8 +68,7 @@ public class FowlMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pass"))
         {
-            gamePlayUI.DecreaseNumberOfFowls(); 
-  
+   
             if (AudioManager.GetInstance() != null)
             {
                 if (scoreManager != null)
