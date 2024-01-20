@@ -13,35 +13,18 @@ public class ShopPanel : MonoBehaviour
     void Start()
     {
 
-        UnlockAllSkins();
-        EnableSelectedTag();
+         EnableSelectedTag();
          
     }
 
-     
 
-    public void UnlockAllSkins()
-    {
-       foreach (Button skins in skinsButtons)
-        {
-            skins.interactable = true;
-         }
-    }
 
-    public void LockAllSkins()
-    {
-        foreach (Button skins in skinsButtons)
-        {
-            skins.interactable = false;
-             skinsButtons[0].interactable = true;
-        }
 
-    }
 
-        public void SelectedSkin(int index)
+    public void SelectedSkin(int index)
     {
         PlayerPrefs.SetInt("SelectedSkin", index);
-        PlayerPrefs.Save(); 
+        PlayerPrefs.Save();
         EnableSelectedTag();
     }
 

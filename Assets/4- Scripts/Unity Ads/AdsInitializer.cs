@@ -8,9 +8,17 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     [SerializeField] bool _testMode = true;
     private string _gameId;
 
-    void Awake()
+     void Awake()
     {
-        InitializeAds();
+        if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            return;
+        }
+        else
+        {
+            InitializeAds();
+        }    
+        
     }
 
     public void InitializeAds()

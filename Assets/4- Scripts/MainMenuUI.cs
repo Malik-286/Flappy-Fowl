@@ -10,7 +10,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
     [SerializeField] GameObject resetPanel;
-
+    [SerializeField] GameObject updatePanel;
 
     [SerializeField] AudioClip touchSFX;
 
@@ -19,15 +19,22 @@ public class MainMenuUI : MonoBehaviour
 
     ScoreManager scoreManager;
     GameManager gameManager;
+
+   
+
     void Start()
     {
 
         scoreManager = FindObjectOfType<ScoreManager>();
-         gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
         resetPanel.SetActive(false);
-
+ 
+    }
+    public void EnableUpdatePanel()
+    {
+        updatePanel.SetActive(true);
     }
 
     public void PlayTouchAudio()
