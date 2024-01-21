@@ -8,12 +8,17 @@ public class ShopPanel : MonoBehaviour
 
     [SerializeField] Button[] skinsButtons;
     [SerializeField] GameObject[] selectedTags;
+    [SerializeField] GameObject removeAdsButton;
 
 
     void Start()
     {
 
          EnableSelectedTag();
+        if(PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            removeAdsButton.SetActive(false);
+        }
          
     }
 

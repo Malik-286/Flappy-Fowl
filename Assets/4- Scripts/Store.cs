@@ -5,8 +5,7 @@ using UnityEngine.Purchasing;
 
 public class Store : MonoBehaviour
 {
-    [SerializeField] GameObject restoreButton;
-    [SerializeField] GameObject purchaseFailedPanel;
+     [SerializeField] GameObject purchaseFailedPanel;
 
     
     const string removeAds_ProductID = "com.aspireplay.flappyfowl.removeads";
@@ -18,10 +17,7 @@ public class Store : MonoBehaviour
     void Awake()
     {
         
-        if(Application.platform != RuntimePlatform.IPhonePlayer)
-        {
-            restoreButton.SetActive(false);
-        }
+      
         purchaseFailedPanel.SetActive(false);
         adsStaus = PlayerPrefs.GetString("AdsStatusKey");
     }

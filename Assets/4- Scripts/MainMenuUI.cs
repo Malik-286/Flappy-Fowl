@@ -10,8 +10,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
     [SerializeField] GameObject resetPanel;
-    [SerializeField] GameObject updatePanel;
-
+ 
     [SerializeField] AudioClip touchSFX;
 
 
@@ -32,11 +31,7 @@ public class MainMenuUI : MonoBehaviour
         resetPanel.SetActive(false);
  
     }
-    public void EnableUpdatePanel()
-    {
-        updatePanel.SetActive(true);
-    }
-
+   
     public void PlayTouchAudio()
     {
          AudioManager.GetInstance().PlaySingleShotAudio(touchSFX, 1.0f);
