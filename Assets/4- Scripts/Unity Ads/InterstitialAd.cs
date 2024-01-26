@@ -1,3 +1,5 @@
+using GoogleMobileAds.Api;
+using System;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -6,6 +8,7 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;
+    internal Action<AdValue> OnAdPaid;
 
     void Awake()
     {
@@ -60,4 +63,19 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     public void OnUnityAdsShowStart(string _adUnitId) { }
     public void OnUnityAdsShowClick(string _adUnitId) { }
     public void OnUnityAdsShowComplete(string _adUnitId, UnityAdsShowCompletionState showCompletionState) { }
+
+    internal static void Load(string adUnitId, AdRequest adRequest, Action<InterstitialAd, LoadAdError> value)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal bool CanShowAd()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal string GetResponseInfo()
+    {
+        throw new NotImplementedException();
+    }
 }

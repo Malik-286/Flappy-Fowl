@@ -1,4 +1,3 @@
-using GoogleMobileAds;
 using GoogleMobileAds.Api;
 using System;
 using UnityEngine;
@@ -42,8 +41,10 @@ public class Banner : MonoBehaviour
         {
             DestroyBannerView();
         }
- 
-          bannerView = new BannerView(_adUnitId, AdSize.Banner, AdPosition.Bottom);
+
+         
+
+        bannerView = new BannerView(_adUnitId, AdSize.IABBanner, AdPosition.Bottom);
 
 
     }
