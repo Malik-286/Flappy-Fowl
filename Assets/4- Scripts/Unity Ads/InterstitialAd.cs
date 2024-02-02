@@ -9,6 +9,12 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;
     internal Action<AdValue> OnAdPaid;
+    internal Action OnAdImpressionRecorded;
+
+    public Action OnAdClicked { get; internal set; }
+    public Action OnAdFullScreenContentOpened { get; internal set; }
+    public Action OnAdFullScreenContentClosed { get; internal set; }
+    public Action<AdError> OnAdFullScreenContentFailed { get; internal set; }
 
     void Awake()
     {
@@ -75,6 +81,11 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
     }
 
     internal string GetResponseInfo()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void Destroy()
     {
         throw new NotImplementedException();
     }
