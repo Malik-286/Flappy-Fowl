@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Banner : MonoBehaviour
 {
-    // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/8030925845";
 #elif UNITY_IPHONE
@@ -30,19 +29,19 @@ public class Banner : MonoBehaviour
             CreateBannerView();
             LoadAd();
         }
-         
-     }
+
+    }
 
     public void CreateBannerView()
     {
         Debug.Log("Creating banner view");
 
-         if (bannerView != null)
+        if (bannerView != null)
         {
             DestroyBannerView();
         }
 
-         
+
 
         bannerView = new BannerView(_adUnitId, AdSize.IABBanner, AdPosition.Bottom);
 
@@ -50,20 +49,20 @@ public class Banner : MonoBehaviour
     }
     public void LoadAd()
     {
-         if (bannerView == null)
+        if (bannerView == null)
         {
             CreateBannerView();
         }
 
-         var adRequest = new AdRequest();
+        var adRequest = new AdRequest();
 
-         Debug.Log("Loading banner ad.");
-         bannerView.LoadAd(adRequest);
+        Debug.Log("Loading banner ad.");
+        bannerView.LoadAd(adRequest);
 
-         ListenToAdEvents();
+        ListenToAdEvents();
     }
 
- 
+
     private void ListenToAdEvents()
     {
         // Raised when an ad is loaded into the banner view.
@@ -106,7 +105,7 @@ public class Banner : MonoBehaviour
             Debug.Log("Banner view full screen content closed.");
         };
     }
- 
+
     public void DestroyBannerView()
     {
         if (bannerView != null)
