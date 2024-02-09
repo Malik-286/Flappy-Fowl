@@ -16,8 +16,7 @@ public class Store : MonoBehaviour
 
     void Awake()
     {
-        
-      
+         
         purchaseFailedPanel.SetActive(false);
         adsStaus = PlayerPrefs.GetString("AdsStatusKey");
     }

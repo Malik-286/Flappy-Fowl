@@ -9,11 +9,14 @@ public class Loading : MonoBehaviour
 {
     [SerializeField] Slider loadingSlider;
     [SerializeField] TextMeshProUGUI loadingText;
+    [SerializeField] Image gameStudioLogo;
+    [SerializeField] float loadingTime = 2.0f;
 
     float currentValue;
     void Update()
     {
-        currentValue += Time.deltaTime / 1.5f;
+        gameStudioLogo.fillAmount += Time.deltaTime;
+        currentValue += Time.deltaTime / loadingTime;
         loadingSlider.value = Mathf.Clamp01(currentValue);
         loadingText.text = ("Loading...")+ (int)(loadingSlider.value * 100)+ "%";
 

@@ -65,9 +65,7 @@ public class Interstitial : MonoBehaviour
 
                 _interstitialAd = ad;
                 ShowInterstitialAd();
-                RegisterEventHandlers(ad);
-                RegisterReloadHandler(ad);
-                
+         
             });
     }
 
