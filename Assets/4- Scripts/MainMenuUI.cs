@@ -9,8 +9,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
-    [SerializeField] GameObject resetPanel;
- 
+  
     [SerializeField] AudioClip touchSFX;
 
 
@@ -28,8 +27,7 @@ public class MainMenuUI : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
-        resetPanel.SetActive(false);
- 
+  
     }
    
     public void PlayTouchAudio()
@@ -47,19 +45,7 @@ public class MainMenuUI : MonoBehaviour
         gameManager.StartGame();
     }
 
-   
-        public void ResetGame()
-        {
-            if (scoreManager != null)
-            {
-                scoreManager.ResetTotalScore();
-                PlayerPrefs.DeleteAll();
-                PlayerPrefs.Save();
-            }
-
-        }
     
-   
 
  
 }
