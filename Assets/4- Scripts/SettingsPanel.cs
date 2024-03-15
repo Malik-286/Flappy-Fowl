@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class SettingsPanel : MonoBehaviour
 {
 
-    [SerializeField] Slider audioSlider;
-    [SerializeField] TextMeshProUGUI appVersionText;
+     [SerializeField] TextMeshProUGUI appVersionText;
+    [SerializeField] Slider audioSwitchSlider;
 
     [SerializeField] string googlePlayStoreURL;
  
@@ -20,15 +20,15 @@ public class SettingsPanel : MonoBehaviour
     }
 
     
-    public void MuteAndUnMuteSound(Toggle toggle)
+    public void MuteAndUnMuteSound()
     {
         if(AudioManager.GetInstance() != null)
         {
-            if(toggle.isOn)
+            if(audioSwitchSlider.value == 1)
             {
                 AudioManager.GetInstance().audioSource.mute = false;
              }
-            else if(!toggle.isOn) 
+            else if(audioSwitchSlider.value == 0) 
             {
                 AudioManager.GetInstance().audioSource.mute = true;
              }
