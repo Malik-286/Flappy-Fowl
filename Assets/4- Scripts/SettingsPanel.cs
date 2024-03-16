@@ -10,8 +10,7 @@ public class SettingsPanel : MonoBehaviour
      [SerializeField] TextMeshProUGUI appVersionText;
     [SerializeField] Slider audioSwitchSlider;
 
-    [SerializeField] string googlePlayStoreURL;
- 
+  
     [SerializeField] string[] socialMediaAccountsURLS;
 
      void Awake()
@@ -36,12 +35,7 @@ public class SettingsPanel : MonoBehaviour
     }
 
    
-
-    public void RateUs()
-    {
-        Application.OpenURL(googlePlayStoreURL);
-    }
-
+ 
      
 
    

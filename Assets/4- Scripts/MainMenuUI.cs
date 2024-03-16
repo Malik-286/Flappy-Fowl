@@ -9,7 +9,9 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
-  
+    [SerializeField] GameObject rewardedPanel;
+
+
     [SerializeField] AudioClip touchSFX;
 
 
@@ -27,6 +29,7 @@ public class MainMenuUI : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
+        rewardedPanel.SetActive(false);
   
     }
    
