@@ -48,8 +48,14 @@ public  class ScoreManager : Singelton<ScoreManager>
     {
         totalScore += gamePlayScore;
         SaveCurrencyData();
-     }
+    }
 
+    public void DecreaseCurrentScore(int amountToDecrese)
+    {
+        totalScore -= amountToDecrese;
+        Debug.Log("Purchasig this skin for :" + amountToDecrese);
+        SaveCurrencyData();
+    }
     public void ResetGamePlayScore()
     {
         gamePlayScore = 0;

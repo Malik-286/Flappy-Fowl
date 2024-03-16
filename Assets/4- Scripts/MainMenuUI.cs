@@ -10,6 +10,8 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject shopPanel;
     [SerializeField] GameObject rewardedPanel;
+    [SerializeField] GameObject skinsPanel;
+
 
 
     [SerializeField] AudioClip touchSFX;
@@ -30,6 +32,7 @@ public class MainMenuUI : MonoBehaviour
         settingsPanel.SetActive(false);
         shopPanel.SetActive(false);
         rewardedPanel.SetActive(false);
+        skinsPanel.SetActive(false);
   
     }
    
