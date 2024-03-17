@@ -11,7 +11,7 @@ public class Rewarded : MonoBehaviour
  #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/5325667613";
 #elif UNITY_IPHONE
-  private string _adUnitId = "ca-app-pub-3940256099942544/1712485313";
+  private string _adUnitId = "ca-app-pub-1387627577986386/5325667613";
 #else
   private string _adUnitId = "unused";
 #endif
@@ -25,6 +25,7 @@ public class Rewarded : MonoBehaviour
     {
          MobileAds.Initialize((InitializationStatus initStatus) => {});
          scoreManager = FindObjectOfType<ScoreManager>();
+         LoadRewardedAd();
     }
 
 
@@ -81,8 +82,7 @@ public class Rewarded : MonoBehaviour
         }
 
         RegisterEventHandlers(rewardedAd);
-        RegisterReloadHandler(rewardedAd);
-     }
+      }
 
 
       void RegisterEventHandlers(RewardedAd ad)
@@ -122,26 +122,5 @@ public class Rewarded : MonoBehaviour
         };
     }
 
-    void RegisterReloadHandler(RewardedAd ad)
-    {
-        // Raised when the ad closed full screen content.
-        ad.OnAdFullScreenContentClosed += () =>
-        {
-            Debug.Log("Rewarded Ad full screen content closed.");
-
-            // Reload the ad so that we can show another as soon as possible.
-            LoadRewardedAd();
-        };
-        // Raised when the ad failed to open full screen content.
-        ad.OnAdFullScreenContentFailed += (AdError error) =>
-        {
-            Debug.LogError("Rewarded ad failed to open full screen content " +
-                           "with error : " + error);
-
-            // Reload the ad so that we can show another as soon as possible.
-            LoadRewardedAd();
-        };
-    }
-
-
+     
 }
