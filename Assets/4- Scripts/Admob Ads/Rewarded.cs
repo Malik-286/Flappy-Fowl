@@ -77,6 +77,7 @@ public class Rewarded : MonoBehaviour
                 if(scoreManager != null)
                 {
                     scoreManager.IncreaseRewardScore(rewardedAmount);
+                    scoreManager.SaveCurrencyData();
                 }
              });
         }

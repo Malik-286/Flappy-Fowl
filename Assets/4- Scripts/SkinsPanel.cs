@@ -5,20 +5,18 @@ using UnityEngine.UI;
 
 public class SkinsPanel : MonoBehaviour
 {
+
     [SerializeField] Button[] skinsButtons;
     [SerializeField] GameObject[] selectedTags;
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
 
 
-    ScoreManager scoreManager;
     void Start()
     {
+        EnableSelectedImage(PlayerPrefs.GetInt("SelectedSkin"));     
+    }
 
-        EnableSelectedTag();
-        EnableSelectedImage(PlayerPrefs.GetInt("SelectedSkin"));
-        scoreManager = FindObjectOfType<ScoreManager>();
-     }
 
 
     public void SelectedSkin(int index)
@@ -38,6 +36,7 @@ public class SkinsPanel : MonoBehaviour
             selectedTags[PlayerPrefs.GetInt("SelectedSkin")].SetActive(true);
         }
 
+
     }
 
     public void EnableSelectedImage(int index)
@@ -50,28 +49,6 @@ public class SkinsPanel : MonoBehaviour
 
     }
 
-    void EnableUnLockedSkins()
-    {
-        // unlock all the skins 
-        skinsButtons[0].interactable = true;
-        skinsButtons[1].interactable = false;
-        skinsButtons[2].interactable = false;
-        skinsButtons[3].interactable = false;
-        skinsButtons[4].interactable = false;
-        skinsButtons[5].interactable = false;
-    }
-
-    void UnLockSkin(int price, int skinIndex)
-    {
-        if (scoreManager != null & scoreManager.GetTotalScore() >= price)
-        {
-            scoreManager.DecreaseCurrentScore(price);
-            skinsButtons[skinIndex].interactable = true;
-        }
-    }
-
-    void CheckStatusOfSkin()
-    {
-
-    }
+   
+  
 }
