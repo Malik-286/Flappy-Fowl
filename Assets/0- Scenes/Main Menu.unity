@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0475a7b0e39866c47a33915fd2c83fc8, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 568b4ea01fb0dc14e9d8f78fae62838f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -4348,10 +4348,10 @@ RectTransform:
   m_Father: {fileID: 1156837570}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105.5, y: -150}
-  m_SizeDelta: {x: 166.2644, y: 43.8491}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 250, y: 644}
+  m_SizeDelta: {x: 166.2644, y: 43.84912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632817713
 MonoBehaviour:
@@ -10782,18 +10782,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1798653040}
-        m_TargetAssemblyTypeName: Rewarded, Assembly-CSharp
-        m_MethodName: LoadRewardedAd
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

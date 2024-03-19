@@ -25,7 +25,7 @@ public class Rewarded : MonoBehaviour
     {
          MobileAds.Initialize((InitializationStatus initStatus) => {});
          scoreManager = FindObjectOfType<ScoreManager>();
-         LoadRewardedAd();
+        
     }
 
 
@@ -61,7 +61,11 @@ public class Rewarded : MonoBehaviour
                           + ad.GetResponseInfo());
 
                 rewardedAd = ad;
+                ShowRewardedAd();
+                RegisterEventHandlers(rewardedAd);
             });
+                 
+              
     }
 
 
@@ -78,6 +82,7 @@ public class Rewarded : MonoBehaviour
                 {
                     scoreManager.IncreaseRewardScore(rewardedAmount);
                     scoreManager.SaveCurrencyData();
+                    this.gameObject.SetActive(false);
                 }
              });
         }
