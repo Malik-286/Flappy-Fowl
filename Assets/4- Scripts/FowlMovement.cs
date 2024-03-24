@@ -92,8 +92,15 @@ public class FowlMovement : MonoBehaviour
             {               
                 AudioManager.GetInstance().PlaySingleShotAudio(collisionSFX, 1.8f);
             }
-            ScoreManager.GetInstance().SaveCurrencyData();
-            gamePlayUI.ActivateGameOverPanel();
+            if(scoreManager != null)
+            {
+                scoreManager.SaveCurrencyData();
+            }
+              
+            if(gamePlayUI != null)
+            {
+                gamePlayUI.ActivateGameOverPanel();
+            }
             this.gameObject.SetActive(false);
                 
  

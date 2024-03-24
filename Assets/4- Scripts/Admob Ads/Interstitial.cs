@@ -4,8 +4,26 @@ using UnityEngine;
 using GoogleMobileAds;
 using GoogleMobileAds.Api;
 using System;
-public class Interstitial : MonoBehaviour
+public class Interstitial : Singelton<Interstitial> 
 {
+
+#if UNITY_ANDROID
+    private string _adUnitId = "ca-app-pub-1387627577986386/3278669337";
+#elif UNITY_IPHONE
+  private string _adUnitId = "ca-app-pub-3940256099942544/4411468910";
+#else
+  private string _adUnitId = "unused";
+#endif
+
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
+
+
+    InterstitialAd _interstitialAd;
+
     public void Start()
     {
         if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
@@ -14,25 +32,17 @@ public class Interstitial : MonoBehaviour
         }
         else
         {
-            MobileAds.Initialize((InitializationStatus initStatus) =>
-            {
+            MobileAds.Initialize((InitializationStatus initStatus) =>  {  });
 
-            });
+             InvokeRepeating("LoadInterstitialAd", 30, 40);
         }
-              
+
+
+         
+               
     }
 
-
- #if UNITY_ANDROID
-    private string _adUnitId = "ca-app-pub-1387627577986386/3278669337";
-#elif UNITY_IPHONE
-  private string _adUnitId = "ca-app-pub-3940256099942544/4411468910";
-#else
-  private string _adUnitId = "unused";
-#endif
-
-    private InterstitialAd _interstitialAd;
-
+ 
  
   public void LoadInterstitialAd()
     {

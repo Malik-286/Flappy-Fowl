@@ -56,7 +56,11 @@ public class GamePlayUI : MonoBehaviour
 
     public void ActivateGameOverPanel()
     {
-        gameOverPanel.SetActive(true);
+        if(gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
+        
     }
     public void ActivateGameWinPanel()
     {
