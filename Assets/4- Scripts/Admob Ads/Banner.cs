@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Banner : MonoBehaviour
 {
-
-
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/8030925845";
 #elif UNITY_IPHONE

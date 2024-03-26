@@ -8,9 +8,9 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
-    [SerializeField] GameObject shopPanel;
     [SerializeField] GameObject rewardedPanel;
     [SerializeField] GameObject skinsPanel;
+    [SerializeField] GameObject purchaseFailedPanel;
 
 
 
@@ -30,7 +30,7 @@ public class MainMenuUI : MonoBehaviour
         scoreManager = FindObjectOfType<ScoreManager>();
         gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
-        shopPanel.SetActive(false);
+        purchaseFailedPanel.SetActive(false);
         rewardedPanel.SetActive(false);
         skinsPanel.SetActive(false);
   
