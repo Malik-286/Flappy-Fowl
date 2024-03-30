@@ -15,7 +15,7 @@ public class Interstitial : MonoBehaviour
         else
         {
             MobileAds.Initialize((InitializationStatus initStatus) =>  { });
-            InvokeRepeating("LoadInterstitialAd", 35f, 70f);
+            InvokeRepeating("LoadInterstitialAd", 40f, 70f);
         }
               
     }
@@ -24,7 +24,7 @@ public class Interstitial : MonoBehaviour
  #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/3278669337";
 #elif UNITY_IPHONE
-  private string _adUnitId = "ca-app-pub-3940256099942544/4411468910";
+  private string _adUnitId = "ca-app-pub-1387627577986386/1164632533";
 #else
   private string _adUnitId = "unused";
 #endif
