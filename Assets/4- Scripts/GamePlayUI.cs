@@ -12,8 +12,7 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] GameObject SpawnPoint;
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject gameWinPanel;
-    [SerializeField] TextMeshProUGUI gameLevelNoText;
-     
+      
     
      [SerializeField] TextMeshProUGUI gamePlayScoreText;
  
@@ -34,8 +33,7 @@ public class GamePlayUI : MonoBehaviour
     
         player = Instantiate(Prefebs[selectedPrefeb], SpawnPoint.transform.position, Quaternion.identity);
         player.SetActive(true);
-        gameLevelNoText.text = SceneManager.GetActiveScene().name;
-
+ 
     }
 
     void Update()

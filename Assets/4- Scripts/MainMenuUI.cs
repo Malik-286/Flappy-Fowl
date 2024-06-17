@@ -8,9 +8,10 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
-    [SerializeField] GameObject rewardedPanel;
-    [SerializeField] GameObject skinsPanel;
+     [SerializeField] GameObject skinsPanel;
     [SerializeField] GameObject purchaseFailedPanel;
+ 
+    [SerializeField] GameObject restorepurchaseButton;
 
 
 
@@ -31,9 +32,21 @@ public class MainMenuUI : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         settingsPanel.SetActive(false);
         purchaseFailedPanel.SetActive(false);
-        rewardedPanel.SetActive(false);
-        skinsPanel.SetActive(false);
+         skinsPanel.SetActive(false);
+         FixRestorePurchaseButton();
   
+    }
+
+    void FixRestorePurchaseButton()
+    {
+
+        if(Application.platform != RuntimePlatform.IPhonePlayer)
+        {
+            restorepurchaseButton.SetActive(false);
+        }else  
+        {
+            restorepurchaseButton.SetActive(true);
+        }
     }
    
     public void PlayTouchAudio()

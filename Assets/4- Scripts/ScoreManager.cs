@@ -68,7 +68,7 @@ public  class ScoreManager : Singelton<ScoreManager>
 
     public void IncreaseRewardScore(int amountToIncrease)
     {
-        totalScore += amountToIncrease; 
+        gamePlayScore += amountToIncrease; 
         SaveCurrencyData();
     }
 
