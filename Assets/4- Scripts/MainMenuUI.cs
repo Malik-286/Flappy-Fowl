@@ -61,6 +61,7 @@ public class MainMenuUI : MonoBehaviour
     
     public void StartGame()
     {
+        PlayTouchAudio();
         gameManager.StartGame();
     }
 

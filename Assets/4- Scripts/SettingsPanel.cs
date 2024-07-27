@@ -7,13 +7,14 @@ using UnityEngine.UI;
 public class SettingsPanel : MonoBehaviour
 {
 
-     [SerializeField] TextMeshProUGUI appVersionText;
+    [SerializeField] TextMeshProUGUI appVersionText;
     [SerializeField] Slider audioSwitchSlider;
 
   
     [SerializeField] string[] socialMediaAccountsURLS;
+ 
 
-     void Awake()
+    void Awake()
     {
          appVersionText.text = Application.version;
     }
