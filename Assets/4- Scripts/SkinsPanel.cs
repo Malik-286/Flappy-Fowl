@@ -7,14 +7,16 @@ public class SkinsPanel : MonoBehaviour
 {
 
     [SerializeField] Button[] skinsButtons;
+    [SerializeField] int[] skinsPrices;
     [SerializeField] GameObject[] purchaseButtons;
 
     [SerializeField] GameObject[] selectedTags;
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
 
-    [SerializeField] Color beforePurchaseSkinTextColour;
-    [SerializeField] Color selectedSkinTextColour;
+
+    [SerializeField] GameObject coinsPurchasePanel;
+   
 
     void Start()
     {
@@ -57,16 +59,45 @@ public class SkinsPanel : MonoBehaviour
 
     public void PurchaseSkin1()
     {
-        skinsButtons[1].interactable = true;
-        purchaseButtons[0].SetActive(false);
-        PlayerPrefs.SetInt("Skin1Purchased", 1);
+         if (ScoreManager.GetInstance() != null)
+        {
+            if(ScoreManager.GetInstance().GetTotalScore() >= skinsPrices[0])
+            {
+                ScoreManager.GetInstance().DecreaseTotalScore(skinsPrices[0]);
+                skinsButtons[1].interactable = true;
+                purchaseButtons[0].SetActive(false);
+                PlayerPrefs.SetInt("Skin1Purchased", 1);
+            }else if(ScoreManager.GetInstance().GetTotalScore() < skinsPrices[0])
+            {
+                print("Not Enough Points");
+                coinsPurchasePanel.SetActive(true);
+            }
+        }
+
+
+
+        
     }
 
     public void PurchaseSkin2()
     {
-        skinsButtons[2].interactable = true;
-        purchaseButtons[1].SetActive(false);
-        PlayerPrefs.SetInt("Skin2Purchased", 1);
+
+        if (ScoreManager.GetInstance() != null)
+        {
+            if (ScoreManager.GetInstance().GetTotalScore() >= skinsPrices[1])
+            {
+                skinsButtons[2].interactable = true;
+                purchaseButtons[1].SetActive(false);
+                PlayerPrefs.SetInt("Skin2Purchased", 1);
+            }
+            else if (ScoreManager.GetInstance().GetTotalScore() < skinsPrices[1])
+            {
+                print("Not Enough Points");
+                coinsPurchasePanel.SetActive(true);
+            }
+        }
+
+
     }
 
     public void PurchaseSkin3()

@@ -12765,7 +12765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8160274513180954247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12785,6 +12785,7 @@ MonoBehaviour:
   - {fileID: 3233224231153436548}
   - {fileID: 8442474878801811030}
   - {fileID: 162525745973716538}
+  skinsPrices: 050000002c010000f4010000e803000088130000
   purchaseButtons:
   - {fileID: 1068773461}
   - {fileID: 391874836}
@@ -12805,8 +12806,7 @@ MonoBehaviour:
   - {fileID: 1529405275}
   - {fileID: 393604070}
   - {fileID: 1668142817}
-  beforePurchaseSkinTextColour: {r: 0, g: 0, b: 0, a: 0}
-  selectedSkinTextColour: {r: 0, g: 0, b: 0, a: 0}
+  coinsPurchasePanel: {fileID: 0}
 --- !u!114 &8160274513180954248
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ public  class ScoreManager : Singelton<ScoreManager>
         SaveCurrencyData();
     }
 
-    public void DecreaseCurrentScore(int amountToDecrese)
+    public void DecreaseTotalScore(int amountToDecrese)
     {
         totalScore -= amountToDecrese;
         Debug.Log("Purchasig this skin for :" + amountToDecrese);
@@ -66,6 +66,7 @@ public  class ScoreManager : Singelton<ScoreManager>
         SaveCurrencyData() ;
     }
 
+ 
     public void IncreaseRewardScore(int amountToIncrease)
     {
         gamePlayScore += amountToIncrease; 

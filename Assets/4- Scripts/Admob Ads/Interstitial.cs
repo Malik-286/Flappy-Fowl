@@ -19,12 +19,12 @@ public class Interstitial : Singelton<Interstitial>
         {
             return;
         }
-        else
+        else if(PlayerPrefs.GetString("AdsStatusKey") == "enabled")
         {
             MobileAds.Initialize((InitializationStatus initStatus) =>  { });
-            InvokeRepeating("LoadInterstitialAd", 40f, 70f);
+ 
         }
-              
+
     }
 
 
@@ -44,6 +44,11 @@ public class Interstitial : Singelton<Interstitial>
 
     public void LoadInterstitialAd()
     {
+        if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            return;
+        }
+         
         // Clean up the old ad before loading a new one.
         if (_interstitialAd != null)
         {
