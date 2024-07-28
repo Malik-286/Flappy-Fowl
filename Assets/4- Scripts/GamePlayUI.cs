@@ -20,13 +20,14 @@ public class GamePlayUI : MonoBehaviour
 
     GameObject player;
     ScoreManager scoreManager;
-  
-    
+
+
+
     void Start()
     {
         selectedPrefeb = PlayerPrefs.GetInt("SelectedSkin");
 
-        gameOverPanel.SetActive(false);
+        gameOverPanel.gameObject.SetActive(false);
         gameWinPanel.SetActive(false);
         scoreManager = FindObjectOfType<ScoreManager>();
    

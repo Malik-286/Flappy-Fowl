@@ -11,9 +11,14 @@ public class GameOverPanel : MonoBehaviour
     public TextMeshProUGUI totalScoreText;
 
 
-    
+    Interstitial interstitialAd;
 
-     void FixedUpdate()
+    void Start()
+    {
+        interstitialAd = FindObjectOfType<Interstitial>();
+    }
+
+    void FixedUpdate()
     {
         UpdateGameOverPanelScoreText();
     }
@@ -30,6 +35,10 @@ public class GameOverPanel : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        if(interstitialAd != null)
+        {
+            interstitialAd.LoadInterstitialAd();
+        }
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
 
         if (ScoreManager.GetInstance() != null)
@@ -50,6 +59,10 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
+        if (interstitialAd != null)
+        {
+            interstitialAd.LoadInterstitialAd();
+        }
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         ScoreManager.GetInstance().ResetGamePlayScore();
 
@@ -67,4 +80,5 @@ public class GameOverPanel : MonoBehaviour
             SceneManager.LoadScene("Main Menu");
         }
     }
+
 }

@@ -31,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4269875753045990348}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -167,7 +166,6 @@ RectTransform:
   m_Children:
   - {fileID: 2206533767366661926}
   m_Father: {fileID: 4805905024644433668}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -302,7 +300,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1919904714204579845}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -437,7 +434,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4805905024644433668}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -572,7 +568,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3453298051633276174}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -708,7 +703,6 @@ RectTransform:
   m_Children:
   - {fileID: 5936386144687564800}
   m_Father: {fileID: 4805905024644433668}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -845,7 +839,6 @@ RectTransform:
   m_Children:
   - {fileID: 2912989682300676116}
   m_Father: {fileID: 4805905024644433668}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -934,7 +927,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2444200003961874395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Interstitial, Assembly-CSharp
         m_MethodName: LoadInterstitialAd
         m_Mode: 1
@@ -970,7 +963,6 @@ GameObject:
   - component: {fileID: 2243227752863991714}
   - component: {fileID: 3159848155956366735}
   - component: {fileID: 7736995194413813617}
-  - component: {fileID: 2444200003961874395}
   m_Layer: 5
   m_Name: Game Win Panel
   m_TagString: Untagged
@@ -996,7 +988,6 @@ RectTransform:
   - {fileID: 1919904714204579845}
   - {fileID: 4269875753045990348}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17444445, y: 0.296}
   m_AnchorMax: {x: 0.8455556, y: 0.7161891}
@@ -1055,18 +1046,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gamePlayScoreText: {fileID: 2150816849929477535}
   totalScoreText: {fileID: 8262780573034228686}
---- !u!114 &2444200003961874395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628339000770334423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9bebd93e924844abe765097ca3784c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7984328251234810065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1079,6 @@ RectTransform:
   m_Children:
   - {fileID: 324024909703434559}
   m_Father: {fileID: 4805905024644433668}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1189,7 +1167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2444200003961874395}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Interstitial, Assembly-CSharp
         m_MethodName: LoadInterstitialAd
         m_Mode: 1
@@ -1244,7 +1222,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7738548493815763930}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

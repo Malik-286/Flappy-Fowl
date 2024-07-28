@@ -7,13 +7,18 @@ public class SkinsPanel : MonoBehaviour
 {
 
     [SerializeField] Button[] skinsButtons;
+    [SerializeField] GameObject[] purchaseButtons;
+
     [SerializeField] GameObject[] selectedTags;
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
 
+    [SerializeField] Color beforePurchaseSkinTextColour;
+    [SerializeField] Color selectedSkinTextColour;
 
     void Start()
     {
+        LoadPurchaseState();
         EnableSelectedImage(PlayerPrefs.GetInt("SelectedSkin"));     
     }
 
@@ -49,6 +54,73 @@ public class SkinsPanel : MonoBehaviour
 
     }
 
-   
-  
+
+    public void PurchaseSkin1()
+    {
+        skinsButtons[1].interactable = true;
+        purchaseButtons[0].SetActive(false);
+        PlayerPrefs.SetInt("Skin1Purchased", 1);
+    }
+
+    public void PurchaseSkin2()
+    {
+        skinsButtons[2].interactable = true;
+        purchaseButtons[1].SetActive(false);
+        PlayerPrefs.SetInt("Skin2Purchased", 1);
+    }
+
+    public void PurchaseSkin3()
+    {
+        skinsButtons[3].interactable = true;
+        purchaseButtons[2].SetActive(false);
+        PlayerPrefs.SetInt("Skin3Purchased", 1);
+    }
+
+    public void PurchaseSkin4()
+    {
+        skinsButtons[4].interactable = true;
+        purchaseButtons[3].SetActive(false);
+        PlayerPrefs.SetInt("Skin4Purchased", 1);
+    }
+
+    public void PurchaseSkin5()
+    {
+        skinsButtons[5].interactable = true;
+        purchaseButtons[4].SetActive(false);
+        PlayerPrefs.SetInt("Skin5Purchased", 1);
+    }
+
+    void LoadPurchaseState()
+    {
+        if (PlayerPrefs.GetInt("Skin1Purchased", 0) == 1)
+        {
+            skinsButtons[1].interactable = true;
+            purchaseButtons[0].SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("Skin2Purchased", 0) == 1)
+        {
+            skinsButtons[2].interactable = true;
+            purchaseButtons[1].SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("Skin3Purchased", 0) == 1)
+        {
+            skinsButtons[3].interactable = true;
+            purchaseButtons[2].SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("Skin4Purchased", 0) == 1)
+        {
+            skinsButtons[4].interactable = true;
+            purchaseButtons[3].SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("Skin5Purchased", 0) == 1)
+        {
+            skinsButtons[5].interactable = true;
+            purchaseButtons[4].SetActive(false);
+        }
+    }
+
 }

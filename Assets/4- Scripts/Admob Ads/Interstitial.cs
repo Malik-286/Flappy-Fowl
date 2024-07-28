@@ -4,8 +4,15 @@ using UnityEngine;
 using GoogleMobileAds;
 using GoogleMobileAds.Api;
 using System;
-public class Interstitial : MonoBehaviour
+public class Interstitial : Singelton<Interstitial>
 {
+
+ 
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
     public void Start()
     {
         if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
@@ -21,7 +28,9 @@ public class Interstitial : MonoBehaviour
     }
 
 
- #if UNITY_ANDROID
+
+ 
+#if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/3278669337";
 #elif UNITY_IPHONE
   private string _adUnitId = "ca-app-pub-1387627577986386/1164632533";
@@ -29,10 +38,11 @@ public class Interstitial : MonoBehaviour
   private string _adUnitId = "unused";
 #endif
 
-    private InterstitialAd _interstitialAd;
 
- 
-  public void LoadInterstitialAd()
+    InterstitialAd _interstitialAd;
+
+
+    public void LoadInterstitialAd()
     {
         // Clean up the old ad before loading a new one.
         if (_interstitialAd != null)
@@ -74,7 +84,7 @@ public class Interstitial : MonoBehaviour
         {
             Debug.Log("Showing interstitial ad.");
             _interstitialAd.Show();
-        }
+          }
         else
         {
             Debug.LogError("Interstitial ad is not ready yet.");

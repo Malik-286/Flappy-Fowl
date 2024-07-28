@@ -2,8 +2,15 @@ using GoogleMobileAds.Api;
 using System;
 using UnityEngine;
 
-public class Banner : MonoBehaviour
+public class Banner : Singelton<Banner> 
 {
+ 
+
+    protected override void Awake()
+    {
+        base.Awake();   
+    }
+
 #if UNITY_ANDROID
     private string _adUnitId = "ca-app-pub-1387627577986386/8030925845";
 #elif UNITY_IPHONE
@@ -11,7 +18,6 @@ public class Banner : MonoBehaviour
 #else
   private string _adUnitId = "unused";
 #endif
-
 
     BannerView bannerView;
     public void Start()
