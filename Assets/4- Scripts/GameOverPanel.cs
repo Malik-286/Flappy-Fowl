@@ -63,16 +63,22 @@ public class GameOverPanel : MonoBehaviour
         {
             interstitialAd.LoadInterstitialAd();
         }
+
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
+        PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved
+
         ScoreManager.GetInstance().ResetGamePlayScore();
 
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelIndex = currentLevelIndex + 1;
 
+        Debug.Log("Current Level Index: " + currentLevelIndex);
+        Debug.Log("Next Level Index: " + nextLevelIndex);
+        Debug.Log("Total Levels: " + SceneManager.sceneCountInBuildSettings);
+
         if (nextLevelIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(nextLevelIndex);
- 
         }
         else
         {

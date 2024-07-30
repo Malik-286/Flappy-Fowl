@@ -8,31 +8,24 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI currentScoreText;
     [SerializeField] GameObject settingsPanel;
-     [SerializeField] GameObject skinsPanel;
+    [SerializeField] GameObject storePanel;
     [SerializeField] GameObject purchaseFailedPanel;
  
     [SerializeField] GameObject restorepurchaseButton;
-
-
-
     [SerializeField] AudioClip touchSFX;
 
 
 
 
-    ScoreManager scoreManager;
-    GameManager gameManager;
-
+  
    
 
     void Start()
     {
 
-        scoreManager = FindObjectOfType<ScoreManager>();
-        gameManager = FindObjectOfType<GameManager>();
-        settingsPanel.SetActive(false);
-        purchaseFailedPanel.SetActive(false);
-         skinsPanel.SetActive(false);
+         settingsPanel.SetActive(false);
+         purchaseFailedPanel.SetActive(false);
+         storePanel.SetActive(false);
          FixRestorePurchaseButton();
   
     }
@@ -51,21 +44,36 @@ public class MainMenuUI : MonoBehaviour
    
     public void PlayTouchAudio()
     {
-         AudioManager.GetInstance().PlaySingleShotAudio(touchSFX, 1.0f);
+        if(AudioManager.GetInstance() != null)
+        {
+            AudioManager.GetInstance().PlaySingleShotAudio(touchSFX, 1.0f);
+        }
     }
 
     void Update()
     {
-        currentScoreText.text = scoreManager.GetTotalScore().ToString();
+        if(ScoreManager.GetInstance() != null)
+        {
+            currentScoreText.text = ScoreManager.GetInstance().GetTotalScore().ToString();
+        }
     }
     
     public void StartGame()
     {
-        PlayTouchAudio();
-        gameManager.StartGame();
-    }
+        if(GameManager.GetInstance() != null)
+        {
+            PlayTouchAudio();
+            GameManager.GetInstance().StartGame();
+         }
+        
+     }
 
-    
+    public void RateUs()
+    {
+        string playStoreUrl = "https://play.google.com/store/apps/details?id=com.AspirePlay.FlappyFowl&pcampaignid=web_share";
+        Application.OpenURL(playStoreUrl);
+
+    }
 
  
 }

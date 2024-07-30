@@ -40,7 +40,10 @@ public class Banner : Singelton<Banner>
 
     public void CreateBannerView()
     {
-
+        if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            return;
+        }
         if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
         {
             return;
@@ -60,6 +63,10 @@ public class Banner : Singelton<Banner>
     }
     public void LoadAd()
     {
+        if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            return;
+        }
         if (bannerView == null)
         {
             CreateBannerView();
