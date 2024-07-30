@@ -68,7 +68,12 @@ public class MainMenuUI : MonoBehaviour
         
      }
 
-    
+    public void RateUs()
+    {
+        string playStoreUrl = "https://play.google.com/store/apps/details?id=com.AspirePlay.FlappyFowl&pcampaignid=web_share";
+        Application.OpenURL(playStoreUrl);
+
+    }
 
  
 }

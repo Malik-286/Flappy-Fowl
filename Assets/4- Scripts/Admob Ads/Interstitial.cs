@@ -85,6 +85,10 @@ public class Interstitial : Singelton<Interstitial>
  
     public void ShowInterstitialAd()
     {
+        if (PlayerPrefs.GetString("AdsStatusKey") == "disabled")
+        {
+            return;
+        }
         if (_interstitialAd != null && _interstitialAd.CanShowAd())
         {
             Debug.Log("Showing interstitial ad.");

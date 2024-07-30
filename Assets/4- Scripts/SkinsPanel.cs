@@ -15,7 +15,7 @@ public class SkinsPanel : MonoBehaviour
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
 
-   
+  
 
     void Start()
     {
