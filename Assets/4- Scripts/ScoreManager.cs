@@ -21,7 +21,7 @@ public  class ScoreManager : Singelton<ScoreManager>
       void Start()
      {
         ResetGamePlayScore();
-     }
+      }
 
    
      
@@ -53,8 +53,13 @@ public  class ScoreManager : Singelton<ScoreManager>
     public void DecreaseTotalScore(int amountToDecrese)
     {
         totalScore -= amountToDecrese;
-        Debug.Log("Purchasig this skin for :" + amountToDecrese);
-        SaveCurrencyData();
+         SaveCurrencyData();
+    }
+
+    public void IncreaseTotalScore(int amountToDecrese)
+    {
+        totalScore += amountToDecrese;
+         SaveCurrencyData();
     }
     public void ResetGamePlayScore()
     {
@@ -83,6 +88,8 @@ public  class ScoreManager : Singelton<ScoreManager>
         Data data =  SaveSystem.LoadData();
         this.totalScore = data.totalScore;
     }
+
+
 
     
 }

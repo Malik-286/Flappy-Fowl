@@ -32,7 +32,7 @@ public class GameManager : Singelton<GameManager>
         ScoreManager.GetInstance().ResetGamePlayScore();
         if (string.IsNullOrEmpty(currentLevel))
         {
-             SceneManager.LoadScene(2);
+             SceneManager.LoadScene(1);
         }
         else
         {
