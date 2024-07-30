@@ -62,9 +62,7 @@ public class Rewarded : Singelton<Rewarded>
     }
 
     public void ShowRewardedAd()
-    {
-    
-
+    {  
         if (_rewardedAd != null && _rewardedAd.CanShowAd())
         {
             _rewardedAd.Show((Reward reward) =>
@@ -72,6 +70,12 @@ public class Rewarded : Singelton<Rewarded>
                 // TODO: Reward the user.
                 RegisterEventHandlers(_rewardedAd);
                 RegisterReloadHandler(_rewardedAd);
+
+                //Assigning Reward After Ad
+                if (AdmobRewardedVideo.Instance)
+                {
+                    AdmobRewardedVideo.Instance.RewardAfterAd();
+                }
                                
             });
         }

@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
  
 public class FowlMovement : MonoBehaviour
 {
+
+    public static FowlMovement Instance;
+
     [Header("Physics Variables")]
 
     [SerializeField] float moveSpeed = 4f;
@@ -23,7 +26,13 @@ public class FowlMovement : MonoBehaviour
     Vector2 UpForce = new Vector2(0f, 5f);
     ScoreManager scoreManager;
     GamePlayUI gamePlayUI;
- 
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+    }
     void Start()
     {
         rb_fowl = GetComponent<Rigidbody2D>();
@@ -53,12 +62,12 @@ public class FowlMovement : MonoBehaviour
         }
     }
 
-    void MoveForward()
+    public void MoveForward()
     {
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
     }
 
-    void MoveUp()
+    public void MoveUp()
     {
         rb_fowl.velocity = new Vector2(0, upForce * Time.deltaTime);      
     }
@@ -94,8 +103,8 @@ public class FowlMovement : MonoBehaviour
             }
             ScoreManager.GetInstance().SaveCurrencyData();
             gamePlayUI.ActivateGameOverPanel();
-            this.gameObject.SetActive(false);
-                
+            //this.gameObject.SetActive(false);
+            Time.timeScale = 0; 
  
         }
 
