@@ -1312,6 +1312,7 @@ GameObject:
   - component: {fileID: 5832352817676214354}
   - component: {fileID: 1377738312809336222}
   - component: {fileID: 1410599965908153182}
+  - component: {fileID: 3425847836568698648}
   m_Layer: 5
   m_Name: Revive
   m_TagString: Untagged
@@ -1447,6 +1448,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Index: 0
+--- !u!95 &3425847836568698648
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480175693737746004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 32ac3f81191b07c4ab2c0dc5b697bd74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7373815587469349306
 GameObject:
   m_ObjectHideFlags: 0

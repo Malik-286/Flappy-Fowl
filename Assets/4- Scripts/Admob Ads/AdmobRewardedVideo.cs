@@ -31,6 +31,7 @@ public class AdmobRewardedVideo : MonoBehaviour
             if (FowlMovement.Instance)
             {
                 FowlMovement.Instance.MoveUp();
+                FowlMovement.Instance.MoveUp();
             }
         }
     }
