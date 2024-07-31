@@ -35,10 +35,8 @@ public class AdmobRewardedVideo : MonoBehaviour
         }
     }
     #endregion
-    public void ShowRewardedVideo(GameObject panelToBeClosed = null)
+    public void ShowRewardedVideo()
     {
-        print("reward ad");
-
         if (Adsmanager.Instance)
          Adsmanager.Instance.ShowRewardedVideoAd();
     }

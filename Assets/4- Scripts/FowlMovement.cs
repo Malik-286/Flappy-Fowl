@@ -103,14 +103,16 @@ public class FowlMovement : MonoBehaviour
             }
             ScoreManager.GetInstance().SaveCurrencyData();
             gamePlayUI.ActivateGameOverPanel();
-            //this.gameObject.SetActive(false);
-            Time.timeScale = 0; 
- 
+            Invoke(nameof(ChangeTimeScale), 0.1f);
+            //this.gameObject.SetActive(false); 
         }
 
     }
 
-  
+  public void ChangeTimeScale()
+    {
+        Time.timeScale = 0;
+    }
 
 
 }

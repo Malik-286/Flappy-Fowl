@@ -873,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchaseFailedPanel: {fileID: 1704600283572797542}
+  purchaseSoundEffect: {fileID: 0}
   adsStaus: enabled
 --- !u!1 &4144877679136960323
 GameObject:
@@ -1423,7 +1424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1410599965908153182}
         m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: RewardAfterAd
+        m_MethodName: ShowRewardedVideo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
