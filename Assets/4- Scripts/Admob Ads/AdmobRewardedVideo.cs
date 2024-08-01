@@ -8,7 +8,6 @@ public class AdmobRewardedVideo : MonoBehaviour
     public static AdmobRewardedVideo Instance;
     public int Index;
 
-
     private void Awake()
     {
         if (Instance == null)
@@ -32,6 +31,57 @@ public class AdmobRewardedVideo : MonoBehaviour
             {
                 FowlMovement.Instance.MoveUp();
                 FowlMovement.Instance.MoveUp();
+            }
+        }
+        if (Index == 1)
+        {
+             print("Come");
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 0);
+                PremiumSkins.Instance.UnlockPremiumSkins(0);
+            }
+        }
+        if(Index == 2)
+        {
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 1);
+                PremiumSkins.Instance.UnlockPremiumSkins(1);
+            }
+        }
+        if (Index == 3)
+        {
+            print("Come");
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 2);
+                PremiumSkins.Instance.UnlockPremiumSkins(2);
+            }
+        }
+        if (Index ==4 )
+        {
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 3);
+                PremiumSkins.Instance.UnlockPremiumSkins(3);
+            }
+        }
+        if (Index == 5)
+        {
+            print("Come");
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 4);
+                PremiumSkins.Instance.UnlockPremiumSkins(4);
+            }
+        }
+        if (Index == 6)
+        {
+            if (PremiumSkins.Instance)
+            {
+                print("Skin Number purchased" + 5);
+                PremiumSkins.Instance.UnlockPremiumSkins(5);
             }
         }
     }

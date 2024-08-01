@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class SkinsPanel : MonoBehaviour
 {
-
     [SerializeField] Button[] skinsButtons;
     [SerializeField] int[] skinsPrices;
     [SerializeField] GameObject[] purchaseButtons;
@@ -15,7 +14,6 @@ public class SkinsPanel : MonoBehaviour
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
 
-  
 
     void Start()
     {
@@ -32,7 +30,6 @@ public class SkinsPanel : MonoBehaviour
         EnableSelectedTag();
         EnableSelectedImage(index);
     }
-
     public void EnableSelectedTag()
     {
 
@@ -54,7 +51,6 @@ public class SkinsPanel : MonoBehaviour
         }
 
     }
-
 
     public void PurchaseSkin1()
     {

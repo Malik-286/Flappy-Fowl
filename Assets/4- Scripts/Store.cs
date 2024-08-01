@@ -5,7 +5,7 @@ using UnityEngine.Purchasing;
 
 public class Store : MonoBehaviour
 {
-
+    public int RewardIndex;
      [SerializeField] GameObject purchaseFailedPanel;
      [SerializeField] AudioClip purchaseSoundEffect;
 
@@ -29,7 +29,7 @@ public class Store : MonoBehaviour
         adsStaus = PlayerPrefs.GetString("AdsStatusKey");
     }
 
-    
+
 
     public void OnPurchaseComplete(Product product)
     {
