@@ -12,10 +12,10 @@ public class PremiumSkins : MonoBehaviour
     [SerializeField] GameObject[] ShopPremiumSkinsButtons;
     [SerializeField] Button[] ShopPremiumSkins;
     [SerializeField] TextMeshProUGUI[] SelectText;
-    [SerializeField] AudioClip purchaseSoundEffect;
+ 
+ 
 
-
-    private void Awake()
+      void Awake()
     {
         if (Instance == null)
         {
@@ -54,11 +54,7 @@ public class PremiumSkins : MonoBehaviour
         }
 
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+  
     public void UnlockPremiumSkins(int SkinNumber)
     {
         print("Skin Number in Shop" + SkinNumber);
@@ -96,15 +92,11 @@ public class PremiumSkins : MonoBehaviour
         for (int i = 0; i < SelectText.Length; i++)
         {
             SelectText[i].text = "Select".ToString();
-        }
+         }
         SelectText[SkinNumber].text = "Selected".ToString();
-
+ 
         PlayerPrefs.SetInt("SelectedSkin", SkinNumber);
         PlayerPrefs.Save();
     }
-    // Update is called once per frame
-    void Update()
-    { 
-
-    }
+  
 }

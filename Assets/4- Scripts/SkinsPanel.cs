@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using hardartcore.CasualGUI;
 
 public class SkinsPanel : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SkinsPanel : MonoBehaviour
     [SerializeField] GameObject[] selectedTags;
     [SerializeField] GameObject[] selectedText;
     [SerializeField] const int defaultUnLockSkinNo = 0;
+
+    [SerializeField] GameObject inAppPurchasePanel;
 
   
 
@@ -76,8 +79,9 @@ public class SkinsPanel : MonoBehaviour
                 PlayerPrefs.SetInt("Skin1Purchased", 1);
             }else if(ScoreManager.GetInstance().GetTotalScore() < skinsPrices[0])
             {
+                inAppPurchasePanel.GetComponent<Dialog>().ShowDialog();
                 print("Not Enough Points");
-             }
+            }
         }
 
 
@@ -109,6 +113,7 @@ public class SkinsPanel : MonoBehaviour
             }
             else if (ScoreManager.GetInstance().GetTotalScore() < skinsPrices[1])
             {
+                inAppPurchasePanel.GetComponent<Dialog>().ShowDialog();
                 print("Not Enough Points");
              }
         }
@@ -140,6 +145,7 @@ public class SkinsPanel : MonoBehaviour
             }
             else if (ScoreManager.GetInstance().GetTotalScore() < skinsPrices[2])
             {
+                inAppPurchasePanel.GetComponent<Dialog>().ShowDialog();
                 print("Not Enough Points");
              }
         }
@@ -170,6 +176,7 @@ public class SkinsPanel : MonoBehaviour
             }
             else if (ScoreManager.GetInstance().GetTotalScore() < skinsPrices[3])
             {
+                inAppPurchasePanel.GetComponent<Dialog>().ShowDialog();
                 print("Not Enough Points");
              }
         }
@@ -202,6 +209,7 @@ public class SkinsPanel : MonoBehaviour
             }
             else if (ScoreManager.GetInstance().GetTotalScore() < skinsPrices[4])
             {
+                inAppPurchasePanel.GetComponent<Dialog>().ShowDialog();
                 print("Not Enough Points");
              }
         }
