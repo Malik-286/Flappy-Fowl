@@ -51,8 +51,12 @@ public class GameOverPanel : MonoBehaviour
     public void PlayAgain()
     {
         
-            ScoreManager.GetInstance().ResetGamePlayScore();        
-            GameManager.GetInstance().RestartGame(); 
+            ScoreManager.GetInstance().ResetGamePlayScore();      
+        if (GameManager.GetInstance() != null)
+        {
+            GameManager.GetInstance().RestartGame();        
+        }
+             
          
     }
 

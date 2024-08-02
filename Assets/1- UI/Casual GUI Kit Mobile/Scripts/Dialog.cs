@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace hardartcore.CasualGUI
 {
@@ -13,6 +12,7 @@ namespace hardartcore.CasualGUI
 
         public void ShowDialog()
         {
+            Time.timeScale = 1.0f;
             DialogContent.SetActive(false);
             gameObject.SetActive(true);
             DialogContent.transform.localScale = Vector3.zero;
@@ -22,6 +22,7 @@ namespace hardartcore.CasualGUI
 
         public void HideDialog()
         {
+            Time.timeScale = 1.0f;
             DialogContent.transform.DOScale(Vector3.zero, AnimDuration);
             StartCoroutine(HideDialogAfterTime());
         }

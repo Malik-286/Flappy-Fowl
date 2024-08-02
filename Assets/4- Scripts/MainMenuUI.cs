@@ -1,3 +1,4 @@
+using hardartcore.CasualGUI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -62,6 +63,7 @@ public class MainMenuUI : MonoBehaviour
     {
         if(GameManager.GetInstance() != null)
         {
+            Time.timeScale = 1.0f;
             PlayTouchAudio();
             GameManager.GetInstance().StartGame();
          }
@@ -75,5 +77,19 @@ public class MainMenuUI : MonoBehaviour
 
     }
 
- 
+    public void ActivateStorePanel()
+    {
+        Time.timeScale = 1.0f;
+        PlayTouchAudio();
+        storePanel.gameObject.GetComponent<Dialog>().ShowDialog();
+    }
+
+    public void ActivateSettingsPanel()
+    {
+        Time.timeScale = 1.0f;
+        PlayTouchAudio();
+        settingsPanel.gameObject.GetComponent<Dialog>().ShowDialog();
+    }
+
+
 }

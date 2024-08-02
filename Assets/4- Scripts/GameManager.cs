@@ -43,8 +43,10 @@ public class GameManager : Singelton<GameManager>
 
     public void RestartGame()
     {
-         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(sceneIndex);
+        Time.timeScale = 1;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;      
+        SceneManager.LoadScene(currentSceneIndex);
+         Debug.Log("Loading Scene " + currentLevel);
          
     }
 

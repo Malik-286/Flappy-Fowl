@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4620740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 46700570}
   - component: {fileID: 46700569}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (4)
+  m_Name: Text (TMP) 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ RectTransform:
   m_GameObject: {fileID: 46700567}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 865295595}
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5K
+  m_text: 750
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1K
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -867,7 +867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1K
+  m_text: 3K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 147517995}
   - component: {fileID: 147517994}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (6)
+  m_Name: Text (TMP) 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1359,7 @@ RectTransform:
   m_GameObject: {fileID: 147517992}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 481429315}
@@ -2110,9 +2110,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 368950185}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ShowDialog
+      - m_Target: {fileID: 1156837572}
+        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_MethodName: ActivateSettingsPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2351,7 +2351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03227997, y: 182.99994}
+  m_AnchoredPosition: {x: 0.03227997, y: 265.99994}
   m_SizeDelta: {x: 163.756, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210931744
@@ -2896,7 +2896,7 @@ GameObject:
   - component: {fileID: 240661778}
   - component: {fileID: 240661777}
   m_Layer: 5
-  m_Name: Skin 5 Purchase Button
+  m_Name: Skin 13 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2968,7 +2968,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin4
+        m_MethodName: PurchaseSkin12
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3184,7 +3184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.478199, y: -122.47068}
+  m_AnchoredPosition: {x: 2.9, y: -125.1}
   m_SizeDelta: {x: 109.7127, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254569680
@@ -3261,7 +3261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -76.4, y: -377}
+  m_AnchoredPosition: {x: -76.4, y: -183}
   m_SizeDelta: {x: 160, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284445206
@@ -3829,19 +3829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1156837572}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayTouchAudio
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8160274513180954248}
-        m_TargetAssemblyTypeName: hardartcore.CasualGUI.Dialog, Assembly-CSharp
-        m_MethodName: ShowDialog
+        m_MethodName: ActivateStorePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3967,7 +3955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: 1K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -4216,140 +4204,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332702102}
   m_CullTransparentMesh: 0
---- !u!1 &338797217
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 338797218}
-  - component: {fileID: 338797220}
-  - component: {fileID: 338797219}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &338797218
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338797217}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836883750}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &338797219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338797217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: New Text
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &338797220
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338797217}
-  m_CullTransparentMesh: 1
 --- !u!1 &340025910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,7 +4355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &342095531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4597,7 +4451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -181.96771, y: 179}
+  m_AnchoredPosition: {x: -181.96771, y: 262}
   m_SizeDelta: {x: 163.756, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356863631
@@ -4894,7 +4748,7 @@ GameObject:
   - component: {fileID: 388277460}
   - component: {fileID: 388277459}
   m_Layer: 5
-  m_Name: Skin 3 Purchase Button
+  m_Name: Skin 11 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4966,7 +4820,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin2
+        m_MethodName: PurchaseSkin10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5159,7 +5013,7 @@ GameObject:
   - component: {fileID: 393604073}
   - component: {fileID: 393604072}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (5)
+  m_Name: Text (TMP) 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5472,7 +5326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -5561,7 +5415,7 @@ GameObject:
   - component: {fileID: 439459576}
   - component: {fileID: 439459575}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (1)
+  m_Name: Text (TMP) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6160,7 +6014,7 @@ GameObject:
   - component: {fileID: 481429317}
   - component: {fileID: 481429316}
   m_Layer: 5
-  m_Name: Skin 6
+  m_Name: Skin 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6175,7 +6029,7 @@ RectTransform:
   m_GameObject: {fileID: 481429314}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1470092411}
@@ -6238,7 +6092,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6263,7 +6117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4007048206284447841, guid: 16d203882ec56714ea7ce916edb57671, type: 3}
+  m_Sprite: {fileID: -7068613016846842766, guid: b2aa4dabd5098a44d9db709d0d3c77f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6428,7 +6282,7 @@ GameObject:
   - component: {fileID: 483649244}
   - component: {fileID: 483649243}
   m_Layer: 5
-  m_Name: Skin 3
+  m_Name: Skin 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6443,7 +6297,7 @@ RectTransform:
   m_GameObject: {fileID: 483649241}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1188505556}
@@ -6506,7 +6360,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6531,7 +6385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1343371803560473536, guid: 26f4a7ed18b86714b9f6494601661fc3, type: 3}
+  m_Sprite: {fileID: 4034257460408169424, guid: 126aba50ddd39ea4fa90c5a9780c8549, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6606,7 +6460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 900
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -7155,7 +7009,7 @@ GameObject:
   - component: {fileID: 572750735}
   - component: {fileID: 572750734}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (2)
+  m_Name: Text (TMP) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7715,7 +7569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197.03229, y: -93.00001}
+  m_AnchoredPosition: {x: 197.03229, y: -9.999992}
   m_SizeDelta: {x: 160, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599228734
@@ -8476,7 +8330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -126}
+  m_AnchoredPosition: {x: -4.4, y: -126}
   m_SizeDelta: {x: 109.7127, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676426144
@@ -8773,6 +8627,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &704677807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704677808}
+  - component: {fileID: 704677810}
+  - component: {fileID: 704677809}
+  m_Layer: 5
+  m_Name: Bg Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &704677808
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704677807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1836883750}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 9.5386, y: -340}
+  m_SizeDelta: {x: 623.5765, y: 112.3617}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &704677809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704677807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.68235296}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 460898cc9ed304713965588b3dd01a51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &704677810
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704677807}
+  m_CullTransparentMesh: 1
 --- !u!1 &716634934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9039,7 +8968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 150
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -9220,7 +9149,7 @@ GameObject:
   - component: {fileID: 749485086}
   - component: {fileID: 749485085}
   m_Layer: 5
-  m_Name: Skin 5
+  m_Name: Skin 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9235,7 +9164,7 @@ RectTransform:
   m_GameObject: {fileID: 749485083}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1179727308}
@@ -9298,7 +9227,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9323,7 +9252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1825432720426759422, guid: 0e1da8e97b311114e8248106c08994e7, type: 3}
+  m_Sprite: {fileID: 1111546806721587337, guid: 0c6b4087be1c8984989b77955f1cc287, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9565,7 +9494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &766898889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9864,7 +9793,7 @@ GameObject:
   - component: {fileID: 796162656}
   - component: {fileID: 796162655}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (3)
+  m_Name: Text (TMP) 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9999,7 +9928,7 @@ GameObject:
   - component: {fileID: 796332796}
   - component: {fileID: 796332795}
   m_Layer: 5
-  m_Name: Skin 4
+  m_Name: Skin 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10014,7 +9943,7 @@ RectTransform:
   m_GameObject: {fileID: 796332793}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 676426143}
@@ -10077,7 +10006,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10102,7 +10031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1246350962214029196, guid: 6f908e6a5b3c12548be8db5e16eff6d7, type: 3}
+  m_Sprite: {fileID: -7679294837404564279, guid: 9176962214b43bc45ae68c2f7bc7b380, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10132,7 +10061,7 @@ GameObject:
   - component: {fileID: 797700337}
   - component: {fileID: 797700336}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (3)
+  m_Name: Text (TMP) 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10147,7 +10076,7 @@ RectTransform:
   m_GameObject: {fileID: 797700334}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1096133426}
@@ -10401,7 +10330,7 @@ GameObject:
   - component: {fileID: 828912396}
   - component: {fileID: 828912395}
   m_Layer: 5
-  m_Name: Skin 6
+  m_Name: Skin 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10416,7 +10345,7 @@ RectTransform:
   m_GameObject: {fileID: 828912393}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1563709808}
@@ -10479,7 +10408,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10504,7 +10433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4007048206284447841, guid: 16d203882ec56714ea7ce916edb57671, type: 3}
+  m_Sprite: {fileID: -7266125404717315652, guid: 564918fc2b04dd64aa99ffe8c6dac7e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10579,7 +10508,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5K
+  m_text: 2K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -10669,7 +10598,7 @@ GameObject:
   - component: {fileID: 865295597}
   - component: {fileID: 865295596}
   m_Layer: 5
-  m_Name: Skin 4
+  m_Name: Skin 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10684,7 +10613,7 @@ RectTransform:
   m_GameObject: {fileID: 865295594}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1034614713}
@@ -10747,7 +10676,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10772,7 +10701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1246350962214029196, guid: 6f908e6a5b3c12548be8db5e16eff6d7, type: 3}
+  m_Sprite: {fileID: 6291438906335971204, guid: 809d683ae5d36894fae4f73ea22b34b2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11004,7 +10933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -11251,7 +11180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.03228, y: -88.00007}
+  m_AnchoredPosition: {x: 12.03228, y: -5.0000534}
   m_SizeDelta: {x: 160, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876249191
@@ -11304,7 +11233,7 @@ GameObject:
   - component: {fileID: 880463625}
   - component: {fileID: 880463624}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (3)
+  m_Name: Text (TMP) 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11319,7 +11248,7 @@ RectTransform:
   m_GameObject: {fileID: 880463622}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 483649242}
@@ -11462,7 +11391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193.03232, y: 187.00003}
+  m_AnchoredPosition: {x: 193.03232, y: 270.00006}
   m_SizeDelta: {x: 163.756, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885013794
@@ -11516,7 +11445,7 @@ GameObject:
   - component: {fileID: 888988089}
   - component: {fileID: 888988088}
   m_Layer: 5
-  m_Name: Skin 6
+  m_Name: Skin 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11531,7 +11460,7 @@ RectTransform:
   m_GameObject: {fileID: 888988086}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 953455772}
@@ -11594,7 +11523,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11619,7 +11548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4007048206284447841, guid: 16d203882ec56714ea7ce916edb57671, type: 3}
+  m_Sprite: {fileID: -6907072107442916967, guid: 6ac408124b4fe5f49ac61db2bf90a89f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11897,7 +11826,7 @@ GameObject:
   - component: {fileID: 965099396}
   - component: {fileID: 965099395}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (4)
+  m_Name: Text (TMP) 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11912,7 +11841,7 @@ RectTransform:
   m_GameObject: {fileID: 965099393}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 796332794}
@@ -12005,7 +11934,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -9.433853, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12018,6 +11947,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965099393}
+  m_CullTransparentMesh: 1
+--- !u!1 &980827991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980827992}
+  - component: {fileID: 980827994}
+  - component: {fileID: 980827993}
+  m_Layer: 5
+  m_Name: Bg Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &980827992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980827991}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1836883750}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7.3646, y: 500}
+  m_SizeDelta: {x: 370.1381, y: 91.5423}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &980827993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980827991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.68235296}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 460898cc9ed304713965588b3dd01a51, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &980827994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980827991}
   m_CullTransparentMesh: 1
 --- !u!1 &982036788
 GameObject:
@@ -12106,7 +12110,7 @@ GameObject:
   - component: {fileID: 989139650}
   - component: {fileID: 989139649}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (6)
+  m_Name: Text (TMP) 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12121,7 +12125,7 @@ RectTransform:
   m_GameObject: {fileID: 989139647}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 888988087}
@@ -12337,18 +12341,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994638738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1783294957}
+  m_Father: {fileID: 1836883750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5027, y: -48}
-  m_SizeDelta: {x: 331.806, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 11.3041, y: 235.52322}
+  m_SizeDelta: {x: 581.2289, y: 75.191}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &994638740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12369,7 +12373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Watch Video to unlock these skins '
+  m_text: 'Watch Video to unlock premium skins '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -12396,8 +12400,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13466,7 +13470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5K
+  m_text: 300
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -13556,7 +13560,7 @@ GameObject:
   - component: {fileID: 1096133428}
   - component: {fileID: 1096133427}
   m_Layer: 5
-  m_Name: Skin 3
+  m_Name: Skin 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13571,7 +13575,7 @@ RectTransform:
   m_GameObject: {fileID: 1096133425}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1870731955}
@@ -13634,7 +13638,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13659,7 +13663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1343371803560473536, guid: 26f4a7ed18b86714b9f6494601661fc3, type: 3}
+  m_Sprite: {fileID: 8728508913616413636, guid: 2366eae9f40af86419045ff062bfad24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13762,7 +13766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1123383685
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14518,7 +14522,7 @@ GameObject:
   - component: {fileID: 1184546458}
   - component: {fileID: 1184546457}
   m_Layer: 5
-  m_Name: Skin 4 Purchase Button
+  m_Name: Skin 12 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14590,7 +14594,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin3
+        m_MethodName: PurchaseSkin11
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14725,7 +14729,7 @@ GameObject:
   - component: {fileID: 1201343710}
   - component: {fileID: 1201343709}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (3)
+  m_Name: Text (TMP) 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14740,7 +14744,7 @@ RectTransform:
   m_GameObject: {fileID: 1201343707}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1885451489}
@@ -14860,7 +14864,7 @@ GameObject:
   - component: {fileID: 1204709397}
   - component: {fileID: 1204709396}
   m_Layer: 5
-  m_Name: Skin 6 Purchase Button
+  m_Name: Skin 14 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14932,7 +14936,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin5
+        m_MethodName: PurchaseSkin13
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15189,7 +15193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103.2, y: -375.99988}
+  m_AnchoredPosition: {x: 103.2, y: -181.99985}
   m_SizeDelta: {x: 163.756, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255699885
@@ -15421,7 +15425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 4K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -15555,7 +15559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1K
+  m_text: 400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -15817,7 +15821,7 @@ GameObject:
   - component: {fileID: 1421001880}
   - component: {fileID: 1421001879}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (5)
+  m_Name: Text (TMP) 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15832,7 +15836,7 @@ RectTransform:
   m_GameObject: {fileID: 1421001877}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 749485084}
@@ -15951,7 +15955,7 @@ GameObject:
   - component: {fileID: 1422394227}
   - component: {fileID: 1422394226}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (6)
+  m_Name: Text (TMP) 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15966,7 +15970,7 @@ RectTransform:
   m_GameObject: {fileID: 1422394224}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 828912394}
@@ -16205,7 +16209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1K
+  m_text: 850
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -16416,7 +16420,7 @@ GameObject:
   - component: {fileID: 1471074933}
   - component: {fileID: 1471074932}
   m_Layer: 5
-  m_Name: Skin 6 Purchase Button
+  m_Name: Skin 17 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16488,7 +16492,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin5
+        m_MethodName: PurchaseSkin16
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16549,7 +16553,7 @@ GameObject:
   - component: {fileID: 1488343257}
   - component: {fileID: 1488343256}
   m_Layer: 5
-  m_Name: Skin 5 Purchase Button
+  m_Name: Skin 9 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16621,7 +16625,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin4
+        m_MethodName: PurchaseSkin8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16906,7 +16910,7 @@ GameObject:
   - component: {fileID: 1529405278}
   - component: {fileID: 1529405277}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (4)
+  m_Name: Text (TMP) 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17041,7 +17045,7 @@ GameObject:
   - component: {fileID: 1541161110}
   - component: {fileID: 1541161109}
   m_Layer: 5
-  m_Name: Skin 5
+  m_Name: Skin 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17056,7 +17060,7 @@ RectTransform:
   m_GameObject: {fileID: 1541161107}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1762021063}
@@ -17119,7 +17123,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17144,7 +17148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1825432720426759422, guid: 0e1da8e97b311114e8248106c08994e7, type: 3}
+  m_Sprite: {fileID: 2995288305113397050, guid: 826cca8098ba67444800308fae791ca3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17630,7 +17634,7 @@ GameObject:
   - component: {fileID: 1576698918}
   - component: {fileID: 1576698917}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (5)
+  m_Name: Text (TMP) 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17645,7 +17649,7 @@ RectTransform:
   m_GameObject: {fileID: 1576698915}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1541161108}
@@ -18050,7 +18054,7 @@ GameObject:
   - component: {fileID: 1612632437}
   - component: {fileID: 1612632436}
   m_Layer: 5
-  m_Name: Skin 3
+  m_Name: Skin 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18065,7 +18069,7 @@ RectTransform:
   m_GameObject: {fileID: 1612632434}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 254569679}
@@ -18074,8 +18078,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.600037, y: 0.000061035156}
-  m_SizeDelta: {x: 153.5237, y: 137.3897}
+  m_AnchoredPosition: {x: -1.488, y: 1.1567}
+  m_SizeDelta: {x: 154.5186, y: 135.2866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612632436
 MonoBehaviour:
@@ -18128,7 +18132,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18153,7 +18157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1343371803560473536, guid: 26f4a7ed18b86714b9f6494601661fc3, type: 3}
+  m_Sprite: {fileID: 5978898516894778253, guid: 17c558ddb31742c42894aa507b18c308, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18317,7 +18321,7 @@ GameObject:
   - component: {fileID: 1668142820}
   - component: {fileID: 1668142819}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (6)
+  m_Name: Text (TMP) 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18708,7 +18712,7 @@ GameObject:
   - component: {fileID: 1687916957}
   - component: {fileID: 1687916956}
   m_Layer: 5
-  m_Name: Skin 4
+  m_Name: Skin 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18723,7 +18727,7 @@ RectTransform:
   m_GameObject: {fileID: 1687916954}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1948703229}
@@ -18786,7 +18790,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18811,7 +18815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1246350962214029196, guid: 6f908e6a5b3c12548be8db5e16eff6d7, type: 3}
+  m_Sprite: {fileID: -6336752053224900323, guid: 11fa604a619fc47459a93991335e128a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18842,7 +18846,7 @@ GameObject:
   - component: {fileID: 1688916402}
   - component: {fileID: 1688916401}
   m_Layer: 5
-  m_Name: Skin 6 Purchase Button
+  m_Name: Skin 10 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18914,7 +18918,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin5
+        m_MethodName: PurchaseSkin9
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18975,7 +18979,7 @@ GameObject:
   - component: {fileID: 1714615467}
   - component: {fileID: 1714615466}
   m_Layer: 5
-  m_Name: Skin 4 Purchase Button
+  m_Name: Skin 16 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19047,7 +19051,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin3
+        m_MethodName: PurchaseSkin15
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19227,7 +19231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 200
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -19617,14 +19621,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 994638739}
+  m_Children: []
   m_Father: {fileID: 1836883750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 18.0428, y: -84.502594}
-  m_SizeDelta: {x: 313.4744, y: 54.9947}
+  m_AnchoredPosition: {x: 9.1362, y: -118.424255}
+  m_SizeDelta: {x: 331.2876, y: 64.4949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783294958
 MonoBehaviour:
@@ -19673,8 +19676,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -19889,6 +19892,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 980827992}
   - {fileID: 1783294957}
   - {fileID: 356863630}
   - {fileID: 210931743}
@@ -19896,7 +19900,8 @@ RectTransform:
   - {fileID: 2140415786}
   - {fileID: 876249190}
   - {fileID: 599228733}
-  - {fileID: 338797218}
+  - {fileID: 704677808}
+  - {fileID: 994638739}
   m_Father: {fileID: 3837777995523914727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -19983,26 +19988,26 @@ MonoBehaviour:
   - {fileID: 1037085726}
   - {fileID: 1788808388}
   SelectText:
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
-  - {fileID: 338797219}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 449619872}
   - {fileID: 1782554350}
   - {fileID: 583229843}
@@ -20022,7 +20027,7 @@ GameObject:
   - component: {fileID: 1839883520}
   - component: {fileID: 1839883519}
   m_Layer: 5
-  m_Name: Skin 3 Purchase Button
+  m_Name: Skin 7 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20094,7 +20099,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin2
+        m_MethodName: PurchaseSkin6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20155,7 +20160,7 @@ GameObject:
   - component: {fileID: 1850112504}
   - component: {fileID: 1850112503}
   m_Layer: 5
-  m_Name: Skin 3 Purchase Button
+  m_Name: Skin 15 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20227,7 +20232,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin2
+        m_MethodName: PurchaseSkin14
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20288,7 +20293,7 @@ GameObject:
   - component: {fileID: 1851845401}
   - component: {fileID: 1851845400}
   m_Layer: 5
-  m_Name: Skin 4 Purchase Button
+  m_Name: Skin 8 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20360,7 +20365,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin3
+        m_MethodName: PurchaseSkin7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20943,7 +20948,7 @@ GameObject:
   - component: {fileID: 1885451491}
   - component: {fileID: 1885451490}
   m_Layer: 5
-  m_Name: Skin 3
+  m_Name: Skin 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20958,7 +20963,7 @@ RectTransform:
   m_GameObject: {fileID: 1885451488}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 785085686}
@@ -21021,7 +21026,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21046,7 +21051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1343371803560473536, guid: 26f4a7ed18b86714b9f6494601661fc3, type: 3}
+  m_Sprite: {fileID: 6222671053091004516, guid: 328fcb006ac044c43ad3fe8a5b514c9f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21211,7 +21216,7 @@ GameObject:
   - component: {fileID: 1903486248}
   - component: {fileID: 1903486247}
   m_Layer: 5
-  m_Name: Skin 3 Purchase Button
+  m_Name: Skin 18 Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21283,7 +21288,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8160274513180954247}
         m_TargetAssemblyTypeName: SkinsPanel, Assembly-CSharp
-        m_MethodName: PurchaseSkin2
+        m_MethodName: PurchaseSkin17
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21388,7 +21393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500
+  m_text: 600
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -22603,7 +22608,7 @@ GameObject:
   - component: {fileID: 2061325166}
   - component: {fileID: 2061325165}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (3)
+  m_Name: Text (TMP) 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22618,14 +22623,14 @@ RectTransform:
   m_GameObject: {fileID: 2061325163}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1612632435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.225, y: -125}
+  m_AnchoredPosition: {x: 1, y: -126.6}
   m_SizeDelta: {x: 143.9374, y: 45.2997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061325165
@@ -23145,7 +23150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1K
+  m_text: 10K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
   m_sharedMaterial: {fileID: 903804157609115575, guid: 36de43f64c2f0f44188ed2ce070385bc, type: 2}
@@ -23415,7 +23420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -188.96771, y: -83}
+  m_AnchoredPosition: {x: -188.96771, y: 0.000015258789}
   m_SizeDelta: {x: 160, y: 159.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140415787
@@ -23468,7 +23473,7 @@ GameObject:
   - component: {fileID: 2147202578}
   - component: {fileID: 2147202577}
   m_Layer: 5
-  m_Name: Text (TMP) 1 (4)
+  m_Name: Text (TMP) 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23483,7 +23488,7 @@ RectTransform:
   m_GameObject: {fileID: 2147202575}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1687916955}
@@ -26948,9 +26953,9 @@ RectTransform:
   - {fileID: 6451751907322925624}
   - {fileID: 7467816424913436824}
   - {fileID: 687462415}
-  - {fileID: 1175307576}
-  - {fileID: 1836883750}
   - {fileID: 1936143399}
+  - {fileID: 1836883750}
+  - {fileID: 1175307576}
   m_Father: {fileID: 1156837570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -29582,7 +29587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8160274513180954247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29602,13 +29607,37 @@ MonoBehaviour:
   - {fileID: 3233224231153436548}
   - {fileID: 8442474878801811030}
   - {fileID: 162525745973716538}
-  skinsPrices: 2c010000e8030000c8000000f401000088130000
+  - {fileID: 1612632436}
+  - {fileID: 796332795}
+  - {fileID: 749485085}
+  - {fileID: 481429316}
+  - {fileID: 1096133427}
+  - {fileID: 1687916956}
+  - {fileID: 1541161109}
+  - {fileID: 888988088}
+  - {fileID: 1885451490}
+  - {fileID: 865295596}
+  - {fileID: 828912395}
+  - {fileID: 483649243}
+  skinsPrices: 320000006400000096000000c80000002c01000090010000f401000058020000ee02000084030000e8030000d0070000c4090000ac0d000094110000881300004c1d000010270000
   purchaseButtons:
   - {fileID: 1068773461}
   - {fileID: 391874836}
   - {fileID: 650049450}
   - {fileID: 292575839}
   - {fileID: 1588232688}
+  - {fileID: 1839883517}
+  - {fileID: 1851845398}
+  - {fileID: 1488343254}
+  - {fileID: 1688916399}
+  - {fileID: 388277457}
+  - {fileID: 1184546455}
+  - {fileID: 240661775}
+  - {fileID: 1204709394}
+  - {fileID: 1850112501}
+  - {fileID: 1714615464}
+  - {fileID: 1471074930}
+  - {fileID: 1903486245}
   purchaseSoundEffect: {fileID: 8300000, guid: a6fed5212d615614c80bceb0ce060f60, type: 3}
   selectedTags:
   - {fileID: 3056214566446775965, guid: 838483c6d0ebe0c4f806f7deed33b6da, type: 3}
@@ -29617,6 +29646,18 @@ MonoBehaviour:
   - {fileID: 2142791719164926280, guid: c93b29c82163b11408c38327e5f13fbe, type: 3}
   - {fileID: 3636592943492213892, guid: 3c47428bc1ae05444b4ed0acdbaff38a, type: 3}
   - {fileID: 2045861527809214854, guid: 51b97178122a82744b093384951fc16a, type: 3}
+  - {fileID: 2045861527809214854, guid: eaab6d0f2de702248b8d67bd56676ce6, type: 3}
+  - {fileID: 2045861527809214854, guid: 26034743737013c48a5bc5bce9bc11dd, type: 3}
+  - {fileID: 2045861527809214854, guid: 7d79dfed54b26134ba824206c7a502d1, type: 3}
+  - {fileID: 2045861527809214854, guid: af9147053ff00484ebd0cc2d2d290ae8, type: 3}
+  - {fileID: 2045861527809214854, guid: 43dbeea2e23a3ce46b3e70b323801a2a, type: 3}
+  - {fileID: 2045861527809214854, guid: 5d0613d0617a70c428e6a52433c80d66, type: 3}
+  - {fileID: 2045861527809214854, guid: 807b7790395a1ec4fa87faed55ca65b5, type: 3}
+  - {fileID: 2045861527809214854, guid: b4da8330a9b81dd4b8f9d0fb5cc4d7da, type: 3}
+  - {fileID: 2045861527809214854, guid: a26edeed480966a4bbfb802747960704, type: 3}
+  - {fileID: 2045861527809214854, guid: c9059764fd135b64798be6c0cf54057d, type: 3}
+  - {fileID: 2045861527809214854, guid: 1143c28fba325f14c91db048d4a27ee1, type: 3}
+  - {fileID: 2045861527809214854, guid: 456ae3fd7453025409c5b452587521c0, type: 3}
   selectedText:
   - {fileID: 439459573}
   - {fileID: 572750732}
@@ -29624,6 +29665,18 @@ MonoBehaviour:
   - {fileID: 1529405275}
   - {fileID: 393604070}
   - {fileID: 1668142817}
+  - {fileID: 2061325163}
+  - {fileID: 965099393}
+  - {fileID: 1421001877}
+  - {fileID: 147517992}
+  - {fileID: 797700334}
+  - {fileID: 2147202575}
+  - {fileID: 1576698915}
+  - {fileID: 989139647}
+  - {fileID: 1201343707}
+  - {fileID: 46700567}
+  - {fileID: 1422394224}
+  - {fileID: 880463622}
   inAppPurchasePanel: {fileID: 1936143398}
 --- !u!114 &8160274513180954248
 MonoBehaviour:

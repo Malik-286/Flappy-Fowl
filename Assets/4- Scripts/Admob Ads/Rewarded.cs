@@ -68,8 +68,8 @@ public class Rewarded : Singelton<Rewarded>
             _rewardedAd.Show((Reward reward) =>
             {
                 // TODO: Reward the user.
-                RegisterEventHandlers(_rewardedAd);
-                RegisterReloadHandler(_rewardedAd);
+              //  RegisterEventHandlers(_rewardedAd);
+             //   RegisterReloadHandler(_rewardedAd);
 
                 //Assigning Reward After Ad
                 if (AdmobRewardedVideo.Instance)
