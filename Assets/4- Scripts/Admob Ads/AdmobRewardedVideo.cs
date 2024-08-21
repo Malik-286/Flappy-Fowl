@@ -21,9 +21,6 @@ public class AdmobRewardedVideo : MonoBehaviour
 
     public void RewardAfterAd()
     {
-        //WorkingIndex = Index;
-        Debug.LogError("hi " + Index);
-
         if (Index == 0)
         {
             this.gameObject.transform.parent.gameObject.SetActive(false);
