@@ -94,10 +94,13 @@ public class FowlMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground"))
         {
-            ScoreManager.GetInstance().totalScore += ScoreManager.GetInstance().GetGamePlayScore();
+            if (ScoreManager.GetInstance() != null)
+            {
+                ScoreManager.GetInstance().totalScore += ScoreManager.GetInstance().GetGamePlayScore();
+                ScoreManager.GetInstance().SaveCurrencyData();
+            }
             DisablePlayerCollider();
             StartCoroutine(EnablePlayerCollider());
-            ScoreManager.GetInstance().SaveCurrencyData();
             gamePlayUI.ActivateGameOverPanel();
             if (AudioManager.GetInstance() != null)
             {

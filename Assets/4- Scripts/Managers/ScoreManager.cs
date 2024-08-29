@@ -6,6 +6,7 @@ using UnityEngine;
 public  class ScoreManager : Singelton<ScoreManager>
 {
  
+
     public int totalScore;
     public int gamePlayScore;
 

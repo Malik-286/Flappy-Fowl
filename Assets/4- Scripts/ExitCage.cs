@@ -10,11 +10,15 @@ public class ExitCage : MonoBehaviour
     [SerializeField]  ParticleSystem winParticles;
     [SerializeField]  AudioClip winSoundEffect;
     [SerializeField]  GameObject[]  enviornmentParticles;
+    [SerializeField] GameObject Player;
+    [SerializeField] float ActualDistance;
+
 
     GamePlayUI gamePlayUI;
 
       void Start()
     {
+
         dustyWings.SetActive(false);
         gamePlayUI = FindObjectOfType<GamePlayUI>();
         cagedBirdSprite.enabled = false;
@@ -23,8 +27,7 @@ public class ExitCage : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Fowl"))
-        {
-                        
+        {                      
             winParticles.Play();
             cagedBirdSprite.enabled = true;
             dustyWings.SetActive(true);
@@ -36,7 +39,10 @@ public class ExitCage : MonoBehaviour
 
         }
     }
+    private void Update()
+    {
 
+    }
     void EnableWinPanel()
     {
         gamePlayUI.ActivateGameWinPanel();
