@@ -16,6 +16,7 @@ public class PlayerStas : MonoBehaviour
     private void Awake()
     {
         //Track Player
+        if(GamePlayUI.instance)
         player = GamePlayUI.instance.player.transform;
     }
     void Start()

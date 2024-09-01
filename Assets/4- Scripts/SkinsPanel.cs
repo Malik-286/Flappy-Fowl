@@ -51,10 +51,10 @@ public class SkinsPanel : MonoBehaviour
     public void EnableSelectedImage(int index)
     {
 
-        for (int i = 0; i < selectedText.Length; i++)
-        {
-            selectedText[i].SetActive(i == index);
-        }
+        //for (int i = 0; i < selectedText.Length; i++)
+        //{
+        //    selectedText[i].SetActive(i == index);
+        //}
 
     }
 
