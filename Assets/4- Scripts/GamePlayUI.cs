@@ -17,8 +17,14 @@ public class GamePlayUI : MonoBehaviour
     [SerializeField] GameObject gameWinPanel;
     public Image PlayerStatus;
     public GameObject player;
-    ScoreManager scoreManager;      
+    ScoreManager scoreManager;   
+    
+
      [SerializeField] TextMeshProUGUI gamePlayScoreText;
+     [SerializeField] TextMeshProUGUI levelNameText;
+ 
+
+
 
     //Player Progress
     public Transform endPoint;    // Reference to the end point's position
@@ -41,8 +47,9 @@ public class GamePlayUI : MonoBehaviour
         gameOverPanel.gameObject.SetActive(false);
         gameWinPanel.SetActive(false);
         scoreManager = FindObjectOfType<ScoreManager>();
-   
-    
+        UpdateLevelNameText();
+
+
         player = Instantiate(Prefebs[selectedPrefeb], SpawnPoint.transform.position, Quaternion.identity);
         player.SetActive(true);
 
@@ -88,4 +95,10 @@ public class GamePlayUI : MonoBehaviour
     {
         gameWinPanel.SetActive(true);
     }
+
+    void UpdateLevelNameText()
+    {
+        levelNameText.text = GameManager.GetInstance().GetCurrentSceneName();
+    }
+
 }

@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
  
 public class FowlMovement : MonoBehaviour
 {
 
     public static FowlMovement Instance;
+
+
+   
 
     [Header("Physics Variables")]
 
@@ -24,7 +26,12 @@ public class FowlMovement : MonoBehaviour
 
     Rigidbody2D rb_fowl;
     Vector2 UpForce = new Vector2(0f, 5f);
-     GamePlayUI gamePlayUI;
+    GamePlayUI gamePlayUI;
+    SpriteRenderer spriteRenderer;
+
+    [SerializeField] Color defaultColour = new Color(255, 255, 255, 255);
+    [SerializeField] Color damageColour = Color.red;
+ 
     private void Awake()
     {
         if(Instance == null)
@@ -36,7 +43,10 @@ public class FowlMovement : MonoBehaviour
     {
         rb_fowl = GetComponent<Rigidbody2D>();
         gamePlayUI = FindObjectOfType<GamePlayUI>();
-     }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        spriteRenderer.color =  defaultColour;
+    }
 
     
 
@@ -100,7 +110,13 @@ public class FowlMovement : MonoBehaviour
                 ScoreManager.GetInstance().SaveCurrencyData();
             }
             DisablePlayerCollider();
+
+            spriteRenderer.color = damageColour;
+
             StartCoroutine(EnablePlayerCollider());
+            StartCoroutine(ResetPlayerColour());
+
+
             gamePlayUI.ActivateGameOverPanel();
             if (AudioManager.GetInstance() != null)
             {
@@ -134,6 +150,35 @@ public class FowlMovement : MonoBehaviour
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
 
     }
+
+    public IEnumerator ResetPlayerColour()
+    {
+        Debug.Log("Starting ResetPlayerColour Coroutine");
+
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = defaultColour;
+        Debug.Log("Set color to defaultColour");
+
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = damageColour;
+        Debug.Log("Set color to damageColour");
+
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = defaultColour;
+        Debug.Log("Set color to defaultColour");
+
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = damageColour;
+        Debug.Log("Set color to damageColour");
+
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = defaultColour;
+        Debug.Log("Set color to defaultColour");
+
+        Debug.Log("Finished ResetPlayerColour Coroutine");
+    }
+
+
 
 
 

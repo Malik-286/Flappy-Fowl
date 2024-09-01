@@ -50,6 +50,11 @@ public class GameManager : Singelton<GameManager>
          
     }
 
+    public string GetCurrentSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
+
     
     
 }

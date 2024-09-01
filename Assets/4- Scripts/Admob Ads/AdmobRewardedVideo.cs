@@ -29,7 +29,7 @@ public class AdmobRewardedVideo : MonoBehaviour
             {
                 FowlMovement.Instance.MoveUp();   // first call to move up
                 FowlMovement.Instance.MoveUp();    // second call to move up
-  
+   
             }
         }
         if (Index == 1)

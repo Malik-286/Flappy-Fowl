@@ -8,12 +8,15 @@ public class MainMenuUI : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI currentScoreText;
+ 
     [SerializeField] GameObject settingsPanel;
     [SerializeField] GameObject storePanel;
     [SerializeField] GameObject purchaseFailedPanel;
  
     [SerializeField] GameObject restorepurchaseButton;
     [SerializeField] AudioClip touchSFX;
+
+
 
 
 
@@ -28,7 +31,7 @@ public class MainMenuUI : MonoBehaviour
          purchaseFailedPanel.SetActive(false);
          storePanel.SetActive(false);
          FixRestorePurchaseButton();
-  
+   
     }
 
     void FixRestorePurchaseButton()
@@ -91,5 +94,6 @@ public class MainMenuUI : MonoBehaviour
         settingsPanel.gameObject.GetComponent<Dialog>().ShowDialog();
     }
 
+ 
 
 }
