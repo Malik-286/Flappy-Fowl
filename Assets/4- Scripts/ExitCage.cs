@@ -39,10 +39,7 @@ public class ExitCage : MonoBehaviour
 
         }
     }
-    private void Update()
-    {
-
-    }
+   
     void EnableWinPanel()
     {
         gamePlayUI.ActivateGameWinPanel();

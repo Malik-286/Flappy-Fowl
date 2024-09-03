@@ -62,13 +62,15 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
-        if (Adsmanager.Instance)
-        {
-            Adsmanager.Instance.ShowRewardedVideoAd();
-        }
+       // if (Adsmanager.Instance)
+      //  {
+      //      Adsmanager.Instance.ShowRewardedVideoAd();
+      //  }
 
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved
+
+
 
         ScoreManager.GetInstance().ResetGamePlayScore();
 
