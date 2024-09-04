@@ -22,6 +22,9 @@ public  class ScoreManager : Singelton<ScoreManager>
       void Start()
      {
         ResetGamePlayScore();
+
+        //IncreaseTotalScore(100000000);
+
       }
 
    
