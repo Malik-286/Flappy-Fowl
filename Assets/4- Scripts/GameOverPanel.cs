@@ -15,6 +15,10 @@ public class GameOverPanel : MonoBehaviour
 
     void Start()
     {
+        if (interstitialAd != null)
+        {
+            interstitialAd.LoadInterstitialAd();
+         }
     }
 
     void FixedUpdate()
@@ -36,7 +40,7 @@ public class GameOverPanel : MonoBehaviour
     {
         if(interstitialAd != null)
         {
-            interstitialAd.LoadInterstitialAd();
+             interstitialAd.ShowInterstitialAd();
         }
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
 

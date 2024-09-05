@@ -32,8 +32,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 5588892744126892414}
-    m_Position: {x: 240, y: 200, z: 0}
+    m_State: {fileID: 3896849371250342807}
+    m_Position: {x: 333.89032, y: 129.16803, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -41,17 +41,17 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 700, y: 110, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5588892744126892414}
---- !u!1102 &5588892744126892414
+  m_DefaultState: {fileID: 3896849371250342807}
+--- !u!1102 &3896849371250342807
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: coin_1
+  m_Name: Gold Coin
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -64,7 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 07f4e5fd37e8826479accd22076a0955, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2365123ea1c1164488f3a55b6693f36b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

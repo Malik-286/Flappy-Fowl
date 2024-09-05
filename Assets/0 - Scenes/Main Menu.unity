@@ -11998,7 +11998,7 @@ GameObject:
   - component: {fileID: 1050261717}
   - component: {fileID: 1050261716}
   m_Layer: 5
-  m_Name: Rate us Button
+  m_Name: Remove Ads  Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17498,7 +17498,7 @@ GameObject:
   - component: {fileID: 1684169409}
   - component: {fileID: 1684169413}
   m_Layer: 5
-  m_Name: Rate Us Button
+  m_Name: Remove Ads Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21287,13 +21287,14 @@ GameObject:
   - component: {fileID: 2068435302}
   - component: {fileID: 2068435301}
   - component: {fileID: 2068435300}
+  - component: {fileID: 2068435304}
   m_Layer: 5
   m_Name: Restore Purchase Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2068435299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21311,7 +21312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 275.54556, y: 560.8261}
+  m_AnchoredPosition: {x: 274, y: 570}
   m_SizeDelta: {x: 117.8021, y: 64.9393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2068435300
@@ -21441,6 +21442,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068435298}
   m_CullTransparentMesh: 0
+--- !u!114 &2068435304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068435298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productId: 
+  buttonType: 1
+  consumePurchase: 1
+  onTransactionsRestored:
+    m_PersistentCalls:
+      m_Calls: []
+  onPurchaseComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onPurchaseFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  titleText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  priceText: {fileID: 0}
 --- !u!1 &2091952015
 GameObject:
   m_ObjectHideFlags: 0
