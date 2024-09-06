@@ -12972,7 +12972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Banner: {fileID: 3776075606862764249}
-  Interstitial: {fileID: 7047408461424519876}
+  Interstitial: {fileID: 6382474512905652786}
   Rewarded: {fileID: 1304131211405418328}
 --- !u!4 &1146285017
 Transform:
@@ -23793,7 +23793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6382474512905652785}
-  - component: {fileID: 7047408461424519876}
+  - component: {fileID: 6382474512905652786}
   m_Layer: 0
   m_Name: -----Interstitial Ad----
   m_TagString: Untagged
@@ -24809,6 +24809,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1146285017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6382474512905652786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069792487450629729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43ed0139af8de34fbd1a3a146aee6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdLoadedStatus: {fileID: 3069792487450629729}
+  _adUnitId: ca-app-pub-1387627577986386/3278669337
 --- !u!224 &6451751907322925624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24995,18 +25009,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7047408461424519876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3069792487450629729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9bebd93e924844abe765097ca3784c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7066267017272040897
 MonoBehaviour:
   m_ObjectHideFlags: 0

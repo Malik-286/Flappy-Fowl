@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GoogleMobileAds.Sample;
 
 public class Adsmanager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Adsmanager : MonoBehaviour
 
     [Space(10f)]
     public Banner Banner;
-    public Interstitial Interstitial;
+    public InterstitialAdController Interstitial;
     public Rewarded Rewarded;
 
     private void Awake()
@@ -34,15 +35,13 @@ public class Adsmanager : MonoBehaviour
     public void ShowBanner()
     {
         Banner.LoadAd();
-        Banner.CreateBannerView();
     }
     public void ShowIntersitial()
     {
-        Interstitial.ShowInterstitialAd();
+        Interstitial.ShowAd();
     }
     public void ShowRewardedVideoAd()
     {
-        Rewarded.LoadRewardedAd();
         Rewarded.ShowRewardedAd();
     }
     #endregion

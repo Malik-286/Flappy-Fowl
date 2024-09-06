@@ -11,14 +11,9 @@ public class GameOverPanel : MonoBehaviour
     public TextMeshProUGUI totalScoreText;
 
 
-    Interstitial interstitialAd;
-
     void Start()
     {
-        if (interstitialAd != null)
-        {
-            interstitialAd.LoadInterstitialAd();
-         }
+
     }
 
     void FixedUpdate()
@@ -38,9 +33,9 @@ public class GameOverPanel : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        if(interstitialAd != null)
+        if (Adsmanager.Instance)
         {
-             interstitialAd.ShowInterstitialAd();
+            Adsmanager.Instance.ShowIntersitial();
         }
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
 
