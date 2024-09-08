@@ -11,10 +11,7 @@ public class GameOverPanel : MonoBehaviour
     public TextMeshProUGUI totalScoreText;
 
 
-    void Start()
-    {
-
-    }
+    
 
     void FixedUpdate()
     {
@@ -61,10 +58,7 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
-       // if (Adsmanager.Instance)
-      //  {
-      //      Adsmanager.Instance.ShowRewardedVideoAd();
-      //  }
+     
 
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved
@@ -73,6 +67,10 @@ public class GameOverPanel : MonoBehaviour
 
         ScoreManager.GetInstance().ResetGamePlayScore();
 
+        if (Adsmanager.Instance)
+        {
+            Adsmanager.Instance.ShowIntersitial();
+        }
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelIndex = currentLevelIndex + 1;
 
