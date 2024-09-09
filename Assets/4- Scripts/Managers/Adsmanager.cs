@@ -11,7 +11,7 @@ public class Adsmanager : MonoBehaviour
     [Space(10f)]
     public Banner Banner;
     public InterstitialAdController Interstitial;
-    public Rewarded Rewarded;
+    public RewardedAdController Rewarded;
 
     private void Awake()
     {
@@ -42,7 +42,7 @@ public class Adsmanager : MonoBehaviour
     }
     public void ShowRewardedVideoAd()
     {
-        Rewarded.ShowRewardedAd();
+        Rewarded.ShowAd();
     }
     #endregion
 

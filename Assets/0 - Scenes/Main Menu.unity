@@ -12973,7 +12973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Banner: {fileID: 3776075606862764249}
   Interstitial: {fileID: 6382474512905652786}
-  Rewarded: {fileID: 1304131211405418328}
+  Rewarded: {fileID: 0}
 --- !u!4 &1146285017
 Transform:
   m_ObjectHideFlags: 0
@@ -21990,7 +21990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7662945805373752371}
-  - component: {fileID: 1304131211405418328}
+  - component: {fileID: 7662945805373752372}
   m_Layer: 0
   m_Name: -----Rewarded Ad-----
   m_TagString: Untagged
@@ -22949,18 +22949,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1304131211405418328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822892266831867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e440b790c722d544a902e2c54c4e6a48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1324146610998510273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25151,6 +25139,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1146285017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7662945805373752372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822892266831867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98cc1221a3c97b4885a2d4aecb35c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _adUnitId: ca-app-pub-3940256099942544/5224354917
 --- !u!222 &7710509345929007735
 CanvasRenderer:
   m_ObjectHideFlags: 0
