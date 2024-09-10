@@ -24,7 +24,7 @@ public class AdmobRewardedVideo : MonoBehaviour
         if (Index == 0)
         {
             this.gameObject.transform.parent.gameObject.SetActive(false);
-            Time.timeScale = 1;
+           // Time.timeScale = 1;
             if (FowlMovement.Instance)
             {
                 FowlMovement.Instance.MoveUp();   // first call to move up

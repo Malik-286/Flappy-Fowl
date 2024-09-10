@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9122426421392490755}
   - component: {fileID: 7668787292074327612}
   - component: {fileID: 7653187584513046950}
+  - component: {fileID: 2682418225765749999}
   m_Layer: 0
   m_Name: Ground Grass (0)
   m_TagString: Ground
@@ -130,6 +131,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.505495, y: 1.4630232}
   m_EdgeRadius: 0
+--- !u!50 &2682418225765749999
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639589670016279025}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1396239148479858202
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +595,7 @@ GameObject:
   - component: {fileID: 8256831612039108522}
   - component: {fileID: 3471942159881551991}
   - component: {fileID: 2311591490431619848}
+  - component: {fileID: 5513979547477774394}
   m_Layer: 0
   m_Name: Ground Grass (1)
   m_TagString: Ground
@@ -686,3 +715,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.505495, y: 1.4715757}
   m_EdgeRadius: 0
+--- !u!50 &5513979547477774394
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8556974147282012580}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

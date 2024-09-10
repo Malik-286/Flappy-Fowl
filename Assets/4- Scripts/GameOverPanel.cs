@@ -11,7 +11,13 @@ public class GameOverPanel : MonoBehaviour
     public TextMeshProUGUI totalScoreText;
 
 
-    
+    void Start()
+    {
+        if (Adsmanager.Instance)
+        {
+            Adsmanager.Instance.Interstitial.LoadAd();
+        }
+    }
 
     void FixedUpdate()
     {
@@ -46,8 +52,11 @@ public class GameOverPanel : MonoBehaviour
 
     public void PlayAgain()
     {
-        
-            ScoreManager.GetInstance().ResetGamePlayScore();      
+        if (Adsmanager.Instance)
+        {
+            Adsmanager.Instance.ShowIntersitial();
+        }
+        ScoreManager.GetInstance().ResetGamePlayScore();      
         if (GameManager.GetInstance() != null)
         {
             GameManager.GetInstance().RestartGame();        
@@ -58,7 +67,10 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
-     
+        if (Adsmanager.Instance)
+        {
+            Adsmanager.Instance.ShowIntersitial();
+        }
 
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved
