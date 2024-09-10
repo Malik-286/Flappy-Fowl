@@ -74,6 +74,7 @@ public class Rewarded : Singelton<Rewarded>
                 //Assigning Reward After Ad
                 if (AdmobRewardedVideo.Instance)
                 {
+                    Time.timeScale = 1;
                     AdmobRewardedVideo.Instance.RewardAfterAd();
                 }
                                

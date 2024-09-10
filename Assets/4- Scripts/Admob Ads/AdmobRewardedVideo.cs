@@ -27,7 +27,7 @@ public class AdmobRewardedVideo : MonoBehaviour
            // Time.timeScale = 1;
             if (FowlMovement.Instance)
             {
-                FowlMovement.Instance.MoveUp();   // first call to move up
+                 FowlMovement.Instance.MoveUp();   // first call to move up
                 FowlMovement.Instance.MoveUp();    // second call to move up
    
             }
