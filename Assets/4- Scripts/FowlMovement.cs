@@ -102,7 +102,13 @@ public class FowlMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
 
     {
-        if (collision.gameObject.CompareTag("Pipes")  || collision.gameObject.CompareTag("Ground"))
+
+        if (Adsmanager.Instance)
+        {
+            Adsmanager.Instance.Interstitial.LoadAd();
+        }
+
+        if (collision.gameObject.CompareTag("Pipes"))
         {
             if (ScoreManager.GetInstance() != null)
             {
@@ -124,6 +130,29 @@ public class FowlMovement : MonoBehaviour
             }
             Invoke(nameof(ChangeTimeScale), 0.1f);
             //this.gameObject.SetActive(false); 
+        }
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            if (ScoreManager.GetInstance() != null)
+            {
+                ScoreManager.GetInstance().totalScore += ScoreManager.GetInstance().GetGamePlayScore();
+                ScoreManager.GetInstance().SaveCurrencyData();
+            }
+            DisablePlayerCollider();
+
+            spriteRenderer.color = damageColour;
+
+          //  StartCoroutine(EnablePlayerCollider());
+         //   StartCoroutine(ResetPlayerColour());
+
+
+            gamePlayUI.ActivateGrassCollisionGameOverPanel();
+            if (AudioManager.GetInstance() != null)
+            {
+                AudioManager.GetInstance().PlaySingleShotAudio(collisionSFX, 1.8f);
+            }
+            Invoke(nameof(ChangeTimeScale), 0.1f);
+         
         }
 
     }
@@ -155,23 +184,23 @@ public class FowlMovement : MonoBehaviour
     {
         Debug.Log("Starting ResetPlayerColour Coroutine");
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         spriteRenderer.color = defaultColour;
         Debug.Log("Set color to defaultColour");
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         spriteRenderer.color = damageColour;
         Debug.Log("Set color to damageColour");
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         spriteRenderer.color = defaultColour;
         Debug.Log("Set color to defaultColour");
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         spriteRenderer.color = damageColour;
         Debug.Log("Set color to damageColour");
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         spriteRenderer.color = defaultColour;
         Debug.Log("Set color to defaultColour");
 

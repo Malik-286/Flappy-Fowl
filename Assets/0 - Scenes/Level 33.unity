@@ -6504,6 +6504,117 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4823518202205099632, guid: cdc919a43bba95b4a8b6916b6aa5321d, type: 3}
   m_PrefabInstance: {fileID: 998467304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1003385638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4546018910233985492}
+    m_Modifications:
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 752.8651
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32.5675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116780045782595952, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_Name
+      value: Grass Collision - Game Over Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116780045782595952, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+--- !u!1 &1003385639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9116780045782595952, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+  m_PrefabInstance: {fileID: 1003385638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1003385640 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1201041549671228231, guid: fdd29719280262545b866368ea7cb9ad, type: 3}
+  m_PrefabInstance: {fileID: 1003385638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1005222987
 GameObject:
   m_ObjectHideFlags: 0
@@ -58543,6 +58654,7 @@ RectTransform:
   - {fileID: 44818727}
   - {fileID: 1421960475}
   - {fileID: 725012065}
+  - {fileID: 1003385640}
   - {fileID: 7827033700889580237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -92732,6 +92844,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Win Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 6628339000770334423, guid: b6ef34c97b761d54181fda79316464b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92825,7 +92941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 652888844972296964, guid: c98ea93edcaee8348bdfc58a1c9c3583, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 652888844972296964, guid: c98ea93edcaee8348bdfc58a1c9c3583, type: 3}
       propertyPath: m_LocalPosition.z
@@ -146613,6 +146729,7 @@ MonoBehaviour:
   - {fileID: 2045861527809214854, guid: 785f637652c974749a4f78a14cf4c1dc, type: 3}
   SpawnPoint: {fileID: 3671887337253090238}
   gameOverPanel: {fileID: 725012064}
+  grassCollisionGameOverPane: {fileID: 1003385639}
   gameWinPanel: {fileID: 1274552243924289199}
   PlayerStatus: {fileID: 1421960477}
   player: {fileID: 0}

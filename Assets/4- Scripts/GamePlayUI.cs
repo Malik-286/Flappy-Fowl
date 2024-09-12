@@ -14,7 +14,10 @@ public class GamePlayUI : MonoBehaviour
     public GameObject[] Prefebs;
     [SerializeField] GameObject SpawnPoint;
     [SerializeField] GameObject gameOverPanel;
+    [SerializeField] GameObject grassCollisionGameOverPane;
     [SerializeField] GameObject gameWinPanel;
+
+
     public Image PlayerStatus;
     public GameObject player;
     ScoreManager scoreManager;   
@@ -46,6 +49,7 @@ public class GamePlayUI : MonoBehaviour
 
         gameOverPanel.gameObject.SetActive(false);
         gameWinPanel.SetActive(false);
+        grassCollisionGameOverPane.SetActive(false);
         scoreManager = FindObjectOfType<ScoreManager>();
         UpdateLevelNameText();
 
@@ -95,7 +99,10 @@ public class GamePlayUI : MonoBehaviour
     {
         gameWinPanel.SetActive(true);
     }
-
+    public void ActivateGrassCollisionGameOverPanel()
+    {
+        grassCollisionGameOverPane.SetActive(true);
+    }
     void UpdateLevelNameText()
     {
         levelNameText.text = GameManager.GetInstance().GetCurrentSceneName();
