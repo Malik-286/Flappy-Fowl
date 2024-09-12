@@ -67,15 +67,14 @@ public class Rewarded : Singelton<Rewarded>
         {
             _rewardedAd.Show((Reward reward) =>
             {
-                // TODO: Reward the user.
-              //  RegisterEventHandlers(_rewardedAd);
-             //   RegisterReloadHandler(_rewardedAd);
+                Time.timeScale = 1;
+         
 
                 //Assigning Reward After Ad
                 if (AdmobRewardedVideo.Instance)
-                {
-                    Time.timeScale = 1;
+                {                    
                     AdmobRewardedVideo.Instance.RewardAfterAd();
+                    
                 }
                                
             });

@@ -21,15 +21,17 @@ public class AdmobRewardedVideo : MonoBehaviour
 
     public void RewardAfterAd()
     {
+        Time.timeScale = 1;
+
         if (Index == 0)
         {
             this.gameObject.transform.parent.gameObject.SetActive(false);
-           // Time.timeScale = 1;
+
             if (FowlMovement.Instance)
             {
-                 FowlMovement.Instance.MoveUp();   // first call to move up
+                FowlMovement.Instance.MoveUp();   // first call to move up
                 FowlMovement.Instance.MoveUp();    // second call to move up
-   
+
             }
         }
         if (Index == 1)
