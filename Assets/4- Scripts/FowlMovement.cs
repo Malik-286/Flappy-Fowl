@@ -103,11 +103,7 @@ public class FowlMovement : MonoBehaviour
 
     {
 
-        if (Adsmanager.Instance)
-        {
-            Adsmanager.Instance.Interstitial.LoadAd();
-        }
-
+   
         if (collision.gameObject.CompareTag("Pipes"))
         {
             if (ScoreManager.GetInstance() != null)

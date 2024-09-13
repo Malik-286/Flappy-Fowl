@@ -85,6 +85,11 @@ public class MainMenuUI : MonoBehaviour
         Time.timeScale = 1.0f;
         PlayTouchAudio();
         storePanel.gameObject.GetComponent<Dialog>().ShowDialog();
+
+        if(Adsmanager.Instance.Rewarded)
+        {
+            Adsmanager.Instance.Rewarded.LoadAd();
+        }
     }
 
     public void ActivateSettingsPanel()

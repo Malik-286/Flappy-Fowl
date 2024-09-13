@@ -36,10 +36,7 @@ public class GameOverPanel : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        if (Adsmanager.Instance)
-        {
-            Adsmanager.Instance.ShowIntersitial();
-        }
+      
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
 
         if (ScoreManager.GetInstance() != null)
@@ -56,7 +53,11 @@ public class GameOverPanel : MonoBehaviour
         {
             Adsmanager.Instance.ShowIntersitial();
         }
-        ScoreManager.GetInstance().ResetGamePlayScore();      
+        if (ScoreManager.GetInstance())
+        {
+            ScoreManager.GetInstance().ResetGamePlayScore();
+        }
+          
         if (GameManager.GetInstance() != null)
         {
             GameManager.GetInstance().RestartGame();        
@@ -76,13 +77,8 @@ public class GameOverPanel : MonoBehaviour
         PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved
 
 
-
         ScoreManager.GetInstance().ResetGamePlayScore();
 
-        if (Adsmanager.Instance)
-        {
-            Adsmanager.Instance.ShowIntersitial();
-        }
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelIndex = currentLevelIndex + 1;
 

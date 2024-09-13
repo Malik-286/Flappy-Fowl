@@ -92,8 +92,8 @@ public class Interstitial : Singelton<Interstitial>
         {
             Debug.Log("Showing interstitial ad.");
             _interstitialAd.Show();
-            RegisterEventHandlers(_interstitialAd);
-            RegisterReloadHandler(_interstitialAd);
+          //  RegisterEventHandlers(_interstitialAd);
+           // RegisterReloadHandler(_interstitialAd);
           }
         else
         {

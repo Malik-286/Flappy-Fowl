@@ -7452,6 +7452,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7185551751582189332, guid: 474d2f30319b66e4fb4647651f4878df, type: 3}
   m_PrefabInstance: {fileID: 1231627200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1244021920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 99.2929
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.2324
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484924197906666984, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278843146969308973, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
+      propertyPath: m_Name
+      value: Sky Collider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a837645a8c7f62c44ac3bc911c347a11, type: 3}
 --- !u!1001 &1268550185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155406,3 +155463,4 @@ SceneRoots:
   - {fileID: 1306647986}
   - {fileID: 5951698692879588140}
   - {fileID: 1153026477}
+  - {fileID: 1244021920}

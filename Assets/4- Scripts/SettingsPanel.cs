@@ -10,7 +10,11 @@ public class SettingsPanel : MonoBehaviour
     [SerializeField] TextMeshProUGUI appVersionText;
     [SerializeField] Slider audioSwitchSlider;
 
-  
+
+    [SerializeField] string googlePlayStoreUrl;
+    [SerializeField] string appstoreUrl;
+
+
     [SerializeField] string[] socialMediaAccountsURLS;
  
 
@@ -44,5 +48,19 @@ public class SettingsPanel : MonoBehaviour
     {
         Application.OpenURL(socialMediaAccountsURLS[urlNumber]);
     }
-     
+
+    public void RateUs()
+    {
+        if (Application.platform != RuntimePlatform.IPhonePlayer)
+        {
+            // Open Google Play Store URL
+            Application.OpenURL(googlePlayStoreUrl);
+        }
+        else
+        {
+            // Open Apple App Store URL
+            Application.OpenURL(appstoreUrl);
+        }
+    }
+
 }
