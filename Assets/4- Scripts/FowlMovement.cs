@@ -77,7 +77,7 @@ public class FowlMovement : MonoBehaviour
 
     public void MoveUp()
     {
-        rb_fowl.velocity = new Vector2(0, upForce * Time.deltaTime);      
+        rb_fowl.linearVelocity = new Vector2(0, upForce * Time.deltaTime);      
     }
 
 
