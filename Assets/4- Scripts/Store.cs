@@ -11,11 +11,11 @@ public class Store : MonoBehaviour
 
 
 
-    const string removeAds_ProductID = "com.aspireplay.flappyfowl.removeads";
-    const string trophies_Pack_01 = "com.aspireplay.flappyfowl.300trophies";
-    const string trophies_Pack_02 = "com.aspireplay.flappyfowl.1000trophies";
-    const string trophies_Pack_03 = "com.aspireplay.flappyfowl.5000trophies";
-
+    const string removeAds_ProductID = "com.aspiregamesstudio.flappyfowl.removeads";
+       const string trophies_Pack_300 = "com.aspiregamesstudio.flappyfowl.300trophies";
+       const string trophies_Pack_1000 = "com.aspiregamesstudio.flappyfowl.1000trophies";
+       const string trophies_Pack_5000 = "com.aspiregamesstudio.flappyfowl.5000trophies";
+       const string trophies_Pack_10000 = "com.aspiregamesstudio.flappyfowl.10000trophies";
 
 
 
@@ -39,7 +39,7 @@ public class Store : MonoBehaviour
             adsStaus = "disabled";
             PlayerPrefs.SetString("AdsStatusKey", adsStaus);
 
-        }else if(product.definition.id == trophies_Pack_01)
+        }else if(product.definition.id == trophies_Pack_300)
         {
             ScoreManager.GetInstance().IncreaseTotalScore(300);
             ScoreManager.GetInstance().SaveCurrencyData();
@@ -48,7 +48,7 @@ public class Store : MonoBehaviour
                 AudioManager.GetInstance().PlaySingleShotAudio(purchaseSoundEffect, 1.0f);
             }
         }
-        else if (product.definition.id == trophies_Pack_02)
+        else if (product.definition.id == trophies_Pack_1000)
         {
             ScoreManager.GetInstance().IncreaseTotalScore(1000);
             ScoreManager.GetInstance().SaveCurrencyData();
@@ -58,9 +58,18 @@ public class Store : MonoBehaviour
             }
         }
 
-        else if (product.definition.id == trophies_Pack_03)
+        else if (product.definition.id == trophies_Pack_5000)
         {
             ScoreManager.GetInstance().IncreaseTotalScore(5000);
+            ScoreManager.GetInstance().SaveCurrencyData();
+            if (AudioManager.GetInstance() != null)
+            {
+                AudioManager.GetInstance().PlaySingleShotAudio(purchaseSoundEffect, 1.0f);
+            }
+        }
+        else if (product.definition.id == trophies_Pack_10000)
+        {
+            ScoreManager.GetInstance().IncreaseTotalScore(10000);
             ScoreManager.GetInstance().SaveCurrencyData();
             if (AudioManager.GetInstance() != null)
             {
