@@ -14,8 +14,6 @@ public class SettingsPanel : MonoBehaviour
     [SerializeField] string googlePlayStoreUrl;
     [SerializeField] string appstoreUrl;
 
-
-    [SerializeField] string[] socialMediaAccountsURLS;
  
 
     void Awake()
@@ -40,15 +38,6 @@ public class SettingsPanel : MonoBehaviour
     }
 
    
- 
-     
-
-   
-    public void OpenSocialMediaAccount(int urlNumber)
-    {
-        Application.OpenURL(socialMediaAccountsURLS[urlNumber]);
-    }
-
     public void RateUs()
     {
         if (Application.platform != RuntimePlatform.IPhonePlayer)
