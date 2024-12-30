@@ -4702,7 +4702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.aspiregamesstudio.flappyfowl.5000trophies
+  productId: com.agsventures.fowlescape.5000trophies
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -18683,7 +18683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.aspiregamesstudio.flappyfowl.1000trophies
+  productId: com.agsventures.fowlescape.1000trophies
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -19162,7 +19162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.aspiregamesstudio.flappyfowl.removeads
+  productId: com.agsventures.fowlescape.removeads
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -21128,7 +21128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.aspiregamesstudio.flappyfowl.10000trophies
+  productId: com.agsventures.fowlescape.10000trophies
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -23339,7 +23339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.aspiregamesstudio.flappyfowl.300trophies
+  productId: com.agsventures.fowlescape.300trophies
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -27133,6 +27133,7 @@ GameObject:
   - component: {fileID: 469872649683998123}
   - component: {fileID: 5180914855524200836}
   - component: {fileID: 3776110000979802702}
+  - component: {fileID: 5180914855524200837}
   m_Layer: 5
   m_Name: Purchase Failed Panel
   m_TagString: Untagged
@@ -27575,6 +27576,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3535345754342872139}
   m_CullTransparentMesh: 1
+--- !u!114 &5180914855524200837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535345754342872139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48636e8c096e44caf9420ba9e68d9123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimDuration: 0.2
+  DialogContent: {fileID: 3535345754342872139}
 --- !u!1 &5236794194664041300
 GameObject:
   m_ObjectHideFlags: 0

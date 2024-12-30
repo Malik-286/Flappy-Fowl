@@ -1,3 +1,4 @@
+using hardartcore.CasualGUI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +12,11 @@ public class Store : MonoBehaviour
 
 
 
-    const string removeAds_ProductID = "com.aspiregamesstudio.flappyfowl.removeads";
-       const string trophies_Pack_300 = "com.aspiregamesstudio.flappyfowl.300trophies";
-       const string trophies_Pack_1000 = "com.aspiregamesstudio.flappyfowl.1000trophies";
-       const string trophies_Pack_5000 = "com.aspiregamesstudio.flappyfowl.5000trophies";
-       const string trophies_Pack_10000 = "com.aspiregamesstudio.flappyfowl.10000trophies";
+     const string removeAds_ProductID = "com.agsventures.fowlescape.removeads";
+       const string trophies_Pack_300 = "com.agsventures.fowlescape.300trophies";
+       const string trophies_Pack_1000 = "com.agsventures.fowlescape.1000trophies";
+       const string trophies_Pack_5000 = "com.agsventures.fowlescape.5000trophies";
+       const string trophies_Pack_10000 = "com.agsventures.fowlescape.10000trophies";
 
 
 
@@ -80,7 +81,7 @@ public class Store : MonoBehaviour
 
     public void OnPurchaseFailed(Product product, PurchaseFailureReason reason)
     {
-        purchaseFailedPanel.SetActive(true);
+        purchaseFailedPanel.GetComponent<Dialog>().ShowDialog();
     }
 
 }
