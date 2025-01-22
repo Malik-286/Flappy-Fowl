@@ -3,6 +3,12 @@ using UnityEngine.Advertisements;
 
 public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener
 {
+
+    public static UnityAdsManager instance;
+
+    [SerializeField] UnityBannerAd Banner;
+    [SerializeField] UnityInterstialAd Interstitial;
+
     [SerializeField] string _androidGameId;
     [SerializeField] string _iOSGameId;
     [SerializeField] bool _testMode = true;
@@ -10,7 +16,14 @@ public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener
 
     void Awake()
     {
+        if(instance == null)
+        {
+            instance = this;
+        }
+
         InitializeAds();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void InitializeAds()
@@ -28,6 +41,30 @@ public class UnityAdsManager : MonoBehaviour, IUnityAdsInitializationListener
         }
     }
 
+    #region AdsCallings
+
+    public void ShowBanner()
+    {
+        if (Banner != null)
+        {
+            Banner.ShowBannerAd();
+        }
+    }
+    public void HideBanner()
+    {
+        if (Banner != null)
+        {
+            Banner.HideBannerAd();
+        }
+    }
+    public void ShowInterstitial()
+    {
+        if (Interstitial != null)
+        {
+            Interstitial.ShowAd();
+        }
+    }
+    #endregion
 
     public void OnInitializationComplete()
     {

@@ -13,10 +13,7 @@ public class GameOverPanel : MonoBehaviour
 
     void Start()
     {
-        //if (Adsmanager.Instance)
-        //{
-        //    Adsmanager.Instance.Interstitial.LoadAd(); //HaiderADSRemoving
-        //}         
+       
     }
 
     void FixedUpdate()
@@ -49,10 +46,11 @@ public class GameOverPanel : MonoBehaviour
 
     public void PlayAgain()
     {
-        //if (Adsmanager.Instance)
-        //{
-        //    Adsmanager.Instance.ShowIntersitial(); //HaiderADSRemoving
-        //}
+        if (UnityAdsManager.instance)
+        {
+            UnityAdsManager.instance.ShowInterstitial();
+        }
+
         if (ScoreManager.GetInstance())
         {
             ScoreManager.GetInstance().ResetGamePlayScore();
@@ -68,10 +66,10 @@ public class GameOverPanel : MonoBehaviour
 
     public void LoadNextNevel()
     {
-        //if (Adsmanager.Instance)
-        //{
-        //    Adsmanager.Instance.ShowIntersitial(); //HaiderADSRemoving
-        //}
+        if (UnityAdsManager.instance)
+        {
+            UnityAdsManager.instance.ShowInterstitial();
+        }
 
         PlayerPrefs.SetString("CurrentLevelKey", SceneManager.GetActiveScene().name);
         PlayerPrefs.Save(); // Ensure the PlayerPrefs are saved

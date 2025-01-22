@@ -3625,8 +3625,8 @@ GameObject:
   - component: {fileID: 300089375}
   - component: {fileID: 300089374}
   - component: {fileID: 300089373}
-  - component: {fileID: 300089377}
   - component: {fileID: 300089376}
+  - component: {fileID: 300089377}
   m_Layer: 5
   m_Name: Skin 5 Purchase Button
   m_TagString: Untagged
@@ -3699,8 +3699,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 300089377}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3782,10 +3782,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 300089371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 5
+  _showAdButton: {fileID: 300089373}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &303698401
 GameObject:
   m_ObjectHideFlags: 0
@@ -8077,8 +8079,8 @@ GameObject:
   - component: {fileID: 628322284}
   - component: {fileID: 628322283}
   - component: {fileID: 628322282}
-  - component: {fileID: 628322286}
   - component: {fileID: 628322285}
+  - component: {fileID: 628322286}
   m_Layer: 5
   m_Name: Skin 4 Purchase Button
   m_TagString: Untagged
@@ -8151,8 +8153,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 628322286}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8234,10 +8236,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 628322280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 4
+  _showAdButton: {fileID: 628322282}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &650049450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11628,7 +11632,7 @@ GameObject:
   - component: {fileID: 896504287}
   - component: {fileID: 896504286}
   - component: {fileID: 896504290}
-  - component: {fileID: 896504289}
+  - component: {fileID: 896504291}
   m_Layer: 5
   m_Name: Skin 6 Purchase Button
   m_TagString: Untagged
@@ -11700,9 +11704,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 896504289}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+      - m_Target: {fileID: 896504291}
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11762,19 +11766,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896504284}
   m_CullTransparentMesh: 1
---- !u!114 &896504289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896504284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Index: 6
 --- !u!114 &896504290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11788,6 +11779,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndexNumber: 6
+--- !u!114 &896504291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896504284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 896504286}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &933194797
 GameObject:
   m_ObjectHideFlags: 0
@@ -14054,56 +14060,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123383684}
   m_CullTransparentMesh: 1
---- !u!1 &1146285015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1146285017}
-  - component: {fileID: 1146285018}
-  m_Layer: 0
-  m_Name: Ads Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1146285017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146285015}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1110418245498576831}
-  - {fileID: 6382474512905652785}
-  - {fileID: 7662945805373752371}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146285018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146285015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e50195f53b8d2746a446e639a94a4a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _androidGameId: 
-  _iOSGameId: 
-  _testMode: 1
 --- !u!1 &1152718887
 GameObject:
   m_ObjectHideFlags: 0
@@ -15097,7 +15053,7 @@ GameObject:
   - component: {fileID: 1248591683}
   - component: {fileID: 1248591682}
   - component: {fileID: 1248591686}
-  - component: {fileID: 1248591685}
+  - component: {fileID: 1248591687}
   m_Layer: 5
   m_Name: Skin 1 Purchase Button
   m_TagString: Untagged
@@ -15169,9 +15125,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1248591685}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+      - m_Target: {fileID: 1248591687}
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15231,19 +15187,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248591680}
   m_CullTransparentMesh: 1
---- !u!114 &1248591685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248591680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Index: 1
 --- !u!114 &1248591686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15257,6 +15200,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndexNumber: 1
+--- !u!114 &1248591687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248591680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 1248591682}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &1274639836
 GameObject:
   m_ObjectHideFlags: 0
@@ -15950,7 +15908,7 @@ GameObject:
   - component: {fileID: 1408431980}
   - component: {fileID: 1408431979}
   - component: {fileID: 1408431983}
-  - component: {fileID: 1408431982}
+  - component: {fileID: 1408431984}
   m_Layer: 5
   m_Name: Skin 3 Purchase Button
   m_TagString: Untagged
@@ -16022,9 +15980,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1408431982}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+      - m_Target: {fileID: 1408431984}
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16084,19 +16042,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408431977}
   m_CullTransparentMesh: 1
---- !u!114 &1408431982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408431977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Index: 3
 --- !u!114 &1408431983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16110,6 +16055,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndexNumber: 3
+--- !u!114 &1408431984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408431977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 1408431979}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &1421001877
 GameObject:
   m_ObjectHideFlags: 0
@@ -22732,8 +22692,8 @@ GameObject:
   - component: {fileID: 1958956858}
   - component: {fileID: 1958956857}
   - component: {fileID: 1958956856}
-  - component: {fileID: 1958956860}
   - component: {fileID: 1958956859}
+  - component: {fileID: 1958956860}
   m_Layer: 5
   m_Name: Skin 2 Purchase Button
   m_TagString: Untagged
@@ -22806,8 +22766,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1958956860}
-        m_TargetAssemblyTypeName: AdmobRewardedVideo, Assembly-CSharp
-        m_MethodName: ShowRewardedVideo
+        m_TargetAssemblyTypeName: UnityRewardedAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22889,10 +22849,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1958956854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dcbd668e22fcaf4a9471e999996a362, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fac0f99fc631114db94d96b686382f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Index: 2
+  _showAdButton: {fileID: 1958956856}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &1961127500
 GameObject:
   m_ObjectHideFlags: 0
@@ -24707,23 +24669,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &7822892266831867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7662945805373752371}
-  - component: {fileID: 7662945805373752372}
-  m_Layer: 0
-  m_Name: -----Rewarded Ad-----
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &114187352281602654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25566,21 +25511,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5011422709619271758}
   m_CullTransparentMesh: 0
---- !u!4 &1110418245498576831
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6921390190923947890}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1146285017}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &1191364277056479334
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26741,23 +26671,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &3069792487450629729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6382474512905652785}
-  - component: {fileID: 6382474512905652786}
-  m_Layer: 0
-  m_Name: -----Interstitial Ad----
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &3076806817796616259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28005,35 +27918,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6382474512905652785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3069792487450629729}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1146285017}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6382474512905652786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3069792487450629729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09bf429656fafa44806b591ab09c58c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _androidAdUnitId: Interstitial_Android
-  _iOsAdUnitId: Interstitial_iOS
 --- !u!224 &6451751907322925624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28122,6 +28006,63 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &6808204472090425503
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6119391174460736964, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_Name
+      value: Ads Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625330828289009753, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e4d90e1f35426949b4a12ae9a8b037b, type: 3}
 --- !u!4 &6823796173367549863
 Transform:
   m_ObjectHideFlags: 0
@@ -28167,41 +28108,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4110872672293965139}
   m_CullTransparentMesh: 1
---- !u!1 &6921390190923947890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110418245498576831}
-  - component: {fileID: 6921390190923947891}
-  m_Layer: 0
-  m_Name: -----Banner Ad----
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &6921390190923947891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6921390190923947890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4aa63b857af0094a9d592b4124501ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _loadBannerButton: {fileID: 0}
-  _showBannerButton: {fileID: 0}
-  _hideBannerButton: {fileID: 0}
-  _bannerPosition: 4
-  _androidAdUnitId: Banner_Android
-  _iOSAdUnitId: Banner_iOS
 --- !u!114 &6929089301456858319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28490,34 +28396,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3918368371934916097}
   m_CullTransparentMesh: 0
---- !u!4 &7662945805373752371
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822892266831867}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1146285017}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7662945805373752372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822892266831867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98cc1221a3c97b4885a2d4aecb35c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _adUnitId: ca-app-pub-1387627577986386/5325667613
 --- !u!222 &7705363689438529545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29194,4 +29072,4 @@ SceneRoots:
   - {fileID: 2723455026645230504}
   - {fileID: 6823796173367549863}
   - {fileID: 4630794406226843334}
-  - {fileID: 1146285017}
+  - {fileID: 6808204472090425503}
