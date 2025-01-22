@@ -24,10 +24,10 @@ public class SetIndexing : MonoBehaviour
     }
     public void AssignIndex()
     {
-        if (AdmobRewardedVideo.Instance)
-        {
-            AdmobRewardedVideo.Instance.Index = IndexNumber;
-        }
+        //if (AdmobRewardedVideo.Instance)
+        //{
+        //    AdmobRewardedVideo.Instance.Index = IndexNumber; //HaiderADSRemoving
+        //}
     }
     // Update is called once per frame
     void Update()

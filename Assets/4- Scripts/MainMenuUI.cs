@@ -86,10 +86,10 @@ public class MainMenuUI : MonoBehaviour
         PlayTouchAudio();
         storePanel.gameObject.GetComponent<Dialog>().ShowDialog();
 
-        if(Adsmanager.Instance.Rewarded)
-        {
-            Adsmanager.Instance.Rewarded.LoadAd();
-        }
+        //if(Adsmanager.Instance.Rewarded)
+        //{
+        //    Adsmanager.Instance.Rewarded.LoadAd();//HaiderADSRemoving
+        //}
     }
 
     public void ActivateSettingsPanel()
